@@ -6,4 +6,9 @@ export default {
   title: 'Typography'
 }
 
-export const Title = () => <TextTitle>Home</TextTitle>
+export const Title = () => (
+  <div>
+    <TextTitle>Hello World!</TextTitle>
+    <TextTitle bold={false}>Hello World!</TextTitle>
+  </div>
+)

@@ -2,6 +2,7 @@ import React from 'react'
 
 import Button from '../components/buttons/button'
 import NavigationButton from '../components/buttons/navigation-button'
+import Navigation from '../components/navigation'
 import TextTitle from '../components/typography/text-title'
 
 import { Home } from '../components/icons'
@@ -18,3 +19,7 @@ export const NavButton = () => (
     <TextTitle>Home</TextTitle>
   </NavigationButton>
 )
+
+export const Nav = () => {
+  return <Navigation selectedKey="home" />
+}
