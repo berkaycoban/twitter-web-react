@@ -1,0 +1,10 @@
+.profile {
+  flex-shrink: 0;
+  border: 1px solid var(--c-primary-opacity-04);
+}
+
+.img {
+  display: block;
+  width: 100%;
+  border-radius: 99px;
+}

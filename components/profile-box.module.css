@@ -1,0 +1,31 @@
+.box {
+  padding: 10px;
+
+  &:hover {
+    color: var(--c-text-color);
+  }
+}
+
+.body {
+  margin-left: 10px;
+  margin-right: 30px;
+
+  * {
+    display: block;
+  }
+
+  /* TO-DO 10 karakter sinirla sonrasina ... koy */
+  text-align: left;
+  max-width: 100px;
+}
+
+.slug {
+  color: var(--c-gray);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.icon {
+  margin-left: auto;
+}
