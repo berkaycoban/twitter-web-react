@@ -13,3 +13,7 @@
     background-color: var(--c-theme-20);
   }
 }
+
+.fullWidth {
+  width: 100% !important;
+}
