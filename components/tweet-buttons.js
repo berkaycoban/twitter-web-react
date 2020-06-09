@@ -2,39 +2,34 @@ import React from 'react'
 
 import styles from './tweet-buttons.module.css'
 
-import Button from './buttons/button'
-import { Media, Gif, Question, Emoji, Schedule } from './icons'
-import { mediaSize } from '../constants'
+import TweetButton from './buttons/tweet-button'
+import Stack from './stack'
+import { Reply, Retweet, Like, Share } from './icons'
 
-import useWindowSize from '../hooks/useWindowSize'
+import { tweetButtonColor } from '../constants/'
 
 function TweetButtons() {
-  const size = useWindowSize()
-  const hidden = size.width < mediaSize.UNNAMED_SIZE
-
   return (
     <div className={styles.buttons}>
-      <Button>
-        <Media />
-      </Button>
-      <Button>
-        <Gif />
-      </Button>
-
-      <Button>
-        <Emoji />
-      </Button>
-
-      {!hidden && (
-        <>
-          <Button>
-            <Question />
-          </Button>
-          <Button>
-            <Schedule />
-          </Button>
-        </>
-      )}
+      <TweetButton count={35}>
+        <Reply />
+      </TweetButton>
+      <TweetButton
+        color={tweetButtonColor.RETWEET}
+        colorBg={tweetButtonColor.RETWEETBG}
+      >
+        <Retweet />
+      </TweetButton>
+      <TweetButton
+        count={1907}
+        color={tweetButtonColor.LIKE}
+        colorBg={tweetButtonColor.LIKEBG}
+      >
+        <Like />
+      </TweetButton>
+      <TweetButton>
+        <Share />
+      </TweetButton>
     </div>
   )
 }

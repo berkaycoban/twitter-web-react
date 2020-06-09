@@ -3,5 +3,6 @@
   border-style: solid;
   border-color: var(--c-border-color);
 
+  min-width: 385px;
   max-width: 600px;
 }

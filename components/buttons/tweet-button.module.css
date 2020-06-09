@@ -1,0 +1,34 @@
+.tweetButton {
+  --hoverColor: var(--c-theme);
+  --hoverBgColor: var(--c-theme-20);
+
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
+  color: var(--c-gray);
+
+  * {
+    color: inherit;
+
+    svg {
+      padding: 5px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: var(--hoverColor);
+
+      svg {
+        border-radius: 99px;
+        background-color: var(--hoverBgColor);
+      }
+    }
+  }
+}
+
+.count {
+  margin-left: 2px;
+  font-size: 13px;
+  color: inherit;
+}

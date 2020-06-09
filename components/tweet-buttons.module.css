@@ -1,13 +1,4 @@
 .buttons {
   display: flex;
-
-  * {
-    padding: 4px;
-    color: var(--c-theme);
-
-    svg {
-      width: 24px;
-      height: 24px;
-    }
-  }
+  justify-content: space-between;
 }

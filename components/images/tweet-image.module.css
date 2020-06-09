@@ -1,10 +1,17 @@
 .tweetImage {
+  /*
+    To-do: Aspect Ratio Image yap 4-3 galiba
+  */
+  position: absolute;
   flex-shrink: 0;
-  max-width: 510px;
+
+  width: 100%;
+  max-height: 500px;
+  bottom: 0;
 }
 
 .img {
-  display: block;
   width: 100%;
-  border-radius: 14px;
+  object-fit: cover;
+  overflow: hidden;
 }

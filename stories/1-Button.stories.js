@@ -7,8 +7,10 @@ import NavigationButton from '../components/buttons/navigation-button'
 import Navigation from '../components/navigation'
 import TextTitle from '../components/typography/text-title'
 import Stack from '../components/stack'
+import TweetButton from '../components/buttons/tweet-button'
+import { tweetButtonColor } from '../constants/'
 
-import { Home, Tweet } from '../components/icons'
+import { Home, Tweet, Reply, Retweet } from '../components/icons'
 
 export default {
   title: 'Button',
@@ -36,6 +38,23 @@ export const Theme = () => {
     </Stack>
   )
 }
+
+export const TweetBtn = () => {
+  return (
+    <Stack>
+      <TweetButton count={35}>
+        <Reply />
+      </TweetButton>
+      <TweetButton
+        color={tweetButtonColor.RETWEET}
+        colorBg={tweetButtonColor.RETWEETBG}
+      >
+        <Retweet />
+      </TweetButton>
+    </Stack>
+  )
+}
+
 export const NavButton = () => (
   <NavigationButton>
     <Home />

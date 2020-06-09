@@ -6,7 +6,7 @@ import styles from './tweet-editor.module.css'
 import ProfilePhoto from './images/profile-photo'
 import ThemeButton from './buttons/theme-button'
 import TweetTextarea from './forms/tweet-textarea'
-import TweetButtons from './tweet-buttons'
+import TweetEditorButtons from './tweet-editor-buttons'
 
 function TweetEditor() {
   return (
@@ -19,7 +19,7 @@ function TweetEditor() {
           <TweetTextarea />
         </div>
         <div className={styles.toolbar}>
-          <TweetButtons />
+          <TweetEditorButtons />
 
           {/* To-do: Textarea deger girildiginde disabled kaldir */}
           <ThemeButton disabled>Tweet</ThemeButton>

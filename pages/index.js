@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import Sidebar from '../components/col-sidebar'
 import Main from '../components/col-main'
 import Extra from '../components/col-extra'
+import Tweet from '../components/tweet-container'
 
 import useWindowSize from '../hooks/useWindowSize'
 
@@ -19,7 +20,9 @@ function HomePage() {
         search={size.width < mediaSize.TABLET_SIZE}
       ></Sidebar>
 
-      <Main>{JSON.stringify(size)}</Main>
+      <Main>
+        <Tweet></Tweet>
+      </Main>
 
       {size.width > mediaSize.TABLET_SIZE && <Extra>extra</Extra>}
     </Layout>
