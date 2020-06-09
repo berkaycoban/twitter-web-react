@@ -17,7 +17,7 @@ export const Title = () => (
 
 export const Body = () => (
   <Stack column>
+    <TextBody bold>Hello World!</TextBody>
     <TextBody>Hello World!</TextBody>
-    <TextBody bold={false}>Hello World!</TextBody>
   </Stack>
 )
