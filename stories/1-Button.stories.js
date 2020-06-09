@@ -8,7 +8,7 @@ import Navigation from '../components/navigation'
 import TextTitle from '../components/typography/text-title'
 import Stack from '../components/stack'
 
-import { Home } from '../components/icons'
+import { Home, Tweet } from '../components/icons'
 
 export default {
   title: 'Button',
@@ -17,18 +17,26 @@ export default {
 
 export const Normal = () => <Button>Save</Button>
 
-export const Theme = () => (
-  <Stack column>
-    <ThemeButton>Save</ThemeButton>
+export const Theme = () => {
+  const flat = boolean('Flat Tweet Icon', false)
 
-    {/* To-do: Button disabled knpbs olustur */}
-    <ThemeButton disabled>Save</ThemeButton>
-    <ThemeButton full>Save</ThemeButton>
-    <ThemeButton full big>
-      Save Big Button
-    </ThemeButton>
-  </Stack>
-)
+  return (
+    <Stack column>
+      <ThemeButton>Save</ThemeButton>
+
+      {/* To-do: Button disabled knobs olustur */}
+      <ThemeButton disabled>Save</ThemeButton>
+      <ThemeButton full>Save</ThemeButton>
+      <ThemeButton full big>
+        Save Big Button
+      </ThemeButton>
+
+      <ThemeButton big flat={flat}>
+        <Tweet />
+      </ThemeButton>
+    </Stack>
+  )
+}
 export const NavButton = () => (
   <NavigationButton>
     <Home />

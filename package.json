@@ -9,7 +9,8 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o public/ui",
-    "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
+    "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\"",
+    "icon-import": "svgr icons/tweet.svg -d components/icons --icon"
   },
   "keywords": [],
   "author": "",

@@ -9,6 +9,7 @@ function ThemeButton({
   className,
   children,
   big = false,
+  flat = false,
   disabled = false,
   ...props
 }) {
@@ -17,6 +18,7 @@ function ThemeButton({
       className={cn(
         styles.button,
         big && styles.bigButton,
+        flat && styles.tweetIcon,
         disabled && styles.disabled,
         className
       )}

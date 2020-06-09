@@ -38,6 +38,7 @@ export const Icon = () => (
     <Icons.Search />
     <Icons.Share />
     <Icons.TimelineProp />
+    <Icons.Tweet />
     <Icons.Twitter />
   </div>
 )

@@ -1,21 +1,38 @@
 .button {
   background-color: var(--c-theme);
   color: var(--c-text-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 40px;
+  min-width: 40px;
+
   padding-left: 15px;
   padding-right: 15px;
-  height: 40px;
-  min-width: 40px;
+
   font-weight: bold;
+  border: 1px solid transparent;
 
   &:hover {
     background-color: var(--c-theme);
     color: var(--c-text-color);
   }
+
+  svg {
+    font-size: 1.5rem;
+  }
 }
 
 .bigButton {
-  height: 47px;
+  min-height: 47px;
   min-width: 47px;
+}
+
+.tweetIcon {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .disabled {
