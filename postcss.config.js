@@ -4,6 +4,9 @@ module.exports = {
     'postcss-custom-media': {
       importFrom: [
         {
+          customMedia: { '--m': '(min-width: 580px)' }
+        },
+        {
           customMedia: { '--t': '(min-width: 980px)' }
         },
         {
