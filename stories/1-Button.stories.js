@@ -18,7 +18,7 @@ export default {
 export const Normal = () => <Button>Save</Button>
 
 export const Theme = () => {
-  const flat = boolean('Flat Tweet Icon', false)
+  const flat = boolean('Flat Tweet Icon', true)
   const disabled = boolean('Disabled', false)
 
   return (
