@@ -7,7 +7,7 @@ import styles from './textarea.module.css'
 function Textarea({ className, children, size = 150, ...props }) {
   return (
     <textarea
-      className={cn([styles, className])}
+      className={cn([styles.textarea, className])}
       placeholder={children}
       maxlength={size}
       {...props}
