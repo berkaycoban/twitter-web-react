@@ -18,6 +18,7 @@ export const Normal = () => <Button>Save</Button>
 export const Theme = () => (
   <Stack column>
     <ThemeButton>Save</ThemeButton>
+    <ThemeButton disabled>Save</ThemeButton>
     <ThemeButton full>Save</ThemeButton>
     <ThemeButton full big>
       Save Big Button

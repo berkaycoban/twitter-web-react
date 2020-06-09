@@ -34,6 +34,7 @@ export const Icon = () => (
     <Icons.Question />
     <Icons.Reply />
     <Icons.Retweet />
+    <Icons.Schedule />
     <Icons.Search />
     <Icons.Share />
     <Icons.TimelineProp />

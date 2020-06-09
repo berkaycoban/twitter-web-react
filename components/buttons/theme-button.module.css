@@ -17,3 +17,8 @@
   height: 47px;
   min-width: 47px;
 }
+
+.disabled {
+  opacity: 0.5;
+  cursor: auto;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Stack from '../components/stack'
 import TextTitle from '../components/typography/text-title'
 import TextBody from '../components/typography/text-body'
 
@@ -8,15 +9,15 @@ export default {
 }
 
 export const Title = () => (
-  <div>
+  <Stack column>
     <TextTitle>Hello World!</TextTitle>
     <TextTitle bold={false}>Hello World!</TextTitle>
-  </div>
+  </Stack>
 )
 
 export const Body = () => (
-  <div>
+  <Stack column>
     <TextBody>Hello World!</TextBody>
     <TextBody bold={false}>Hello World!</TextBody>
-  </div>
+  </Stack>
 )

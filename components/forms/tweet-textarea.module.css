@@ -1,0 +1,13 @@
+.tweet {
+  font-size: 19px;
+
+  &::placeholder {
+    color: var(--c-gray);
+  }
+
+  &:focus {
+    &::placeholder {
+      color: var(--c-focus-placeholder);
+    }
+  }
+}

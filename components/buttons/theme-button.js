@@ -5,10 +5,21 @@ import Button from './button'
 
 import styles from './theme-button.module.css'
 
-function ThemeButton({ className, children, big = false, ...props }) {
+function ThemeButton({
+  className,
+  children,
+  big = false,
+  disabled = false,
+  ...props
+}) {
   return (
     <Button
-      className={cn(styles.button, big && styles.bigButton, className)}
+      className={cn(
+        styles.button,
+        big && styles.bigButton,
+        disabled && styles.disabled,
+        className
+      )}
       {...props}
     >
       {children}

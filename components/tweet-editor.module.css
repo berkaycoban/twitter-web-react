@@ -1,0 +1,34 @@
+.editor {
+  max-width: 510px;
+  display: flex;
+}
+
+.photo {
+  margin-right: 20px;
+}
+
+.body {
+  width: 100%;
+}
+
+.textarea {
+  display: flex;
+  align-items: center;
+  height: 45px;
+
+  textarea {
+    width: 100%;
+    height: 1.5rem;
+  }
+}
+
+/* To-do : Textarea kelime cogaldikca alt satira buyumesi */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  /* buttons kismi */
+  margin-left: -8px;
+}
