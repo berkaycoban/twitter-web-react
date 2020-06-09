@@ -19,13 +19,12 @@ export const Normal = () => <Button>Save</Button>
 
 export const Theme = () => {
   const flat = boolean('Flat Tweet Icon', false)
+  const disabled = boolean('Disabled', false)
 
   return (
     <Stack column>
-      <ThemeButton>Save</ThemeButton>
+      <ThemeButton disabled={disabled}>Save</ThemeButton>
 
-      {/* To-do: Button disabled knobs olustur */}
-      <ThemeButton disabled>Save</ThemeButton>
       <ThemeButton full>Save</ThemeButton>
       <ThemeButton full big>
         Save Big Button
