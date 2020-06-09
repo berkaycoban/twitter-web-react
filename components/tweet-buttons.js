@@ -4,11 +4,13 @@ import styles from './tweet-buttons.module.css'
 
 import Button from './buttons/button'
 import { Media, Gif, Question, Emoji, Schedule } from './icons'
-import useWindowSize from '../hooks/useWindowSize'
 import { mediaSize } from '../constants'
+
+import useWindowSize from '../hooks/useWindowSize'
 
 function TweetButtons() {
   const size = useWindowSize()
+  const hidden = size.width < mediaSize.UNNAMED_SIZE
 
   return (
     <div className={styles.buttons}>
@@ -19,7 +21,7 @@ function TweetButtons() {
         <Gif />
       </Button>
 
-      {size.width > mediaSize.UNNAMED_SIZE && (
+      {!hidden && (
         <Button>
           <Question />
         </Button>
@@ -29,7 +31,7 @@ function TweetButtons() {
         <Emoji />
       </Button>
 
-      {size.width > mediaSize.UNNAMED_SIZE && (
+      {!hidden && (
         <Button>
           <Schedule />
         </Button>
