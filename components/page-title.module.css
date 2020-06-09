@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c-border-color);
+  padding: 8px 15px;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.icon {
+  margin-left: 20px;
+  margin-right: -6px;
+
+  max-width: 39px;
+  max-height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    color: var(--c-theme);
+    font-size: 24px;
+  }
+}

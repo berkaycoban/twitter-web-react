@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CONST from '../constants'
+import { mediaSize } from '../constants'
 
 import Layout from '../components/layout'
 import Sidebar from '../components/col-sidebar'
@@ -15,13 +15,13 @@ function HomePage() {
   return (
     <Layout>
       <Sidebar
-        flat={size.width < CONST.DESKTOP_SIZE}
-        search={size.width < CONST.TABLET_SIZE}
+        flat={size.width < mediaSize.DESKTOP_SIZE}
+        search={size.width < mediaSize.TABLET_SIZE}
       ></Sidebar>
 
       <Main>{JSON.stringify(size)}</Main>
 
-      {size.width > CONST.TABLET_SIZE && <Extra>extra</Extra>}
+      {size.width > mediaSize.TABLET_SIZE && <Extra>extra</Extra>}
     </Layout>
   )
 }

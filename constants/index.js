@@ -1,4 +1,1 @@
-export default {
-  TABLET_SIZE: 980,
-  DESKTOP_SIZE: 1270
-}
+export { default as mediaSize } from './custom-media'
