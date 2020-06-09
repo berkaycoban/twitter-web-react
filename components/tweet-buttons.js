@@ -21,20 +21,19 @@ function TweetButtons() {
         <Gif />
       </Button>
 
-      {!hidden && (
-        <Button>
-          <Question />
-        </Button>
-      )}
-
       <Button>
         <Emoji />
       </Button>
 
       {!hidden && (
-        <Button>
-          <Schedule />
-        </Button>
+        <>
+          <Button>
+            <Question />
+          </Button>
+          <Button>
+            <Schedule />
+          </Button>
+        </>
       )}
     </div>
   )
