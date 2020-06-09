@@ -1,14 +1,18 @@
 .editor {
-  max-width: 510px;
   display: flex;
+  padding: 10px;
+  border-bottom: 10px solid var(--c-border-color);
 }
 
 .photo {
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .body {
   width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .textarea {
@@ -22,13 +26,11 @@
   }
 }
 
-/* To-do : Textarea kelime cogaldikca alt satira buyumesi */
 .toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   margin-top: 10px;
-  /* buttons kismi */
   margin-left: -8px;
 }

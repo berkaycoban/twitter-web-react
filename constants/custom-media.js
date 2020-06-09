@@ -1,4 +1,5 @@
 export default {
+  UNNAMED_SIZE: 700,
   TABLET_SIZE: 980,
   DESKTOP_SIZE: 1270
 }
