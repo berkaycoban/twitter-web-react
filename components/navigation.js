@@ -21,7 +21,8 @@ import {
   MessagesFill,
   BookmarkFill,
   ListsFill,
-  ProfileFill
+  ProfileFill,
+  Search
 } from './icons'
 
 const MENU = [
@@ -90,20 +91,31 @@ const MENU = [
   }
 ]
 
-function Navigation({ selectedKey = 'home' }) {
+function Navigation({ flat = false, search = false, selectedKey = 'home' }) {
   return (
     <nav className={styles.nav}>
       {MENU.map((menu) => {
+        const showTitle = !flat && menu.title.length > 0
         const selected = selectedKey === menu.key
+        const showSearch = search && menu.key === 'explore'
+
         return (
-          <NavigationButton
-            key={menu.key}
-            notify={menu.notify}
-            selected={selected}
-          >
-            {selected ? menu.iconSelected : menu.icon}
-            <TextTitle>{menu.title}</TextTitle>
-          </NavigationButton>
+          <>
+            {showSearch ? (
+              <NavigationButton key={'search'} notify={0}>
+                <Search />
+              </NavigationButton>
+            ) : (
+              <NavigationButton
+                key={menu.key}
+                notify={menu.notify}
+                selected={selected}
+              >
+                {selected ? menu.iconSelected : menu.icon}
+                {showTitle && <TextTitle>{menu.title}</TextTitle>}
+              </NavigationButton>
+            )}
+          </>
         )
       })}
     </nav>

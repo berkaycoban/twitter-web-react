@@ -1,4 +1,5 @@
 import React from 'react'
+import { withKnobs, boolean } from '@storybook/addon-knobs'
 
 import Button from '../components/buttons/button'
 import ThemeButton from '../components/buttons/theme-button'
@@ -10,7 +11,8 @@ import Stack from '../components/stack'
 import { Home } from '../components/icons'
 
 export default {
-  title: 'Button'
+  title: 'Button',
+  decorators: [withKnobs]
 }
 
 export const Normal = () => <Button>Save</Button>
@@ -18,6 +20,8 @@ export const Normal = () => <Button>Save</Button>
 export const Theme = () => (
   <Stack column>
     <ThemeButton>Save</ThemeButton>
+
+    {/* To-do: Button disabled knpbs olustur */}
     <ThemeButton disabled>Save</ThemeButton>
     <ThemeButton full>Save</ThemeButton>
     <ThemeButton full big>
@@ -33,5 +37,6 @@ export const NavButton = () => (
 )
 
 export const Nav = () => {
-  return <Navigation selectedKey="home" />
+  const flat = boolean('Flat', false)
+  return <Navigation flat={flat} selectedKey="home" />
 }
