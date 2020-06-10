@@ -5,6 +5,12 @@ import Button from './button'
 
 import styles from './tweet-button.module.css'
 
+function countFormatter(count) {
+  return Math.abs(count) > 999
+    ? Math.sign(count) * (Math.abs(count) / 1000).toFixed(1) + 'K'
+    : Math.sign(count) * Math.abs(count)
+}
+
 function TweetButton({ count, children, color = '', colorBg = '', ...props }) {
   return (
     <>
@@ -14,7 +20,9 @@ function TweetButton({ count, children, color = '', colorBg = '', ...props }) {
       >
         <Button {...props}>
           {children}
-          {count > 0 && <span className={styles.count}>{count}</span>}
+          {count > 0 && (
+            <span className={styles.count}>{countFormatter(count)}</span>
+          )}
         </Button>
       </div>
     </>

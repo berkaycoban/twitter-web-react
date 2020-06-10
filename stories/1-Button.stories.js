@@ -1,6 +1,8 @@
 import React from 'react'
 import { withKnobs, boolean } from '@storybook/addon-knobs'
 
+import tweetButtonColor from '../constants/tweet-button-color'
+
 import Button from '../components/buttons/button'
 import ThemeButton from '../components/buttons/theme-button'
 import NavigationButton from '../components/buttons/navigation-button'
@@ -8,8 +10,6 @@ import Navigation from '../components/navigation'
 import TextTitle from '../components/typography/text-title'
 import Stack from '../components/stack'
 import TweetButton from '../components/buttons/tweet-button'
-import { tweetButtonColor } from '../constants/'
-
 import { Home, Tweet, Reply, Retweet } from '../components/icons'
 
 export default {

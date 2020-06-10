@@ -12,24 +12,30 @@ import TweetButtons from './tweet-buttons'
 import { ArrowBottom } from './icons'
 
 function TweetContainer({
+  photo = 'https://pbs.twimg.com/profile_images/1270075367949205507/WlwJibzU_400x400.jpg',
   name = 'Berkay Ç.',
   slug = 'berkaycoban35',
-  time = 'May 19',
+  time = 'Sep 9',
   tweet = 'İzmir’in dağlarında çiçekler açar! 🇹🇷  #9Eylül İzmir’in Kurtuluşu kutlu olsun!',
-  image = 'https://pbs.twimg.com/media/EEAYRiuX4AEtTsW?format=jpg&name=small'
+  image = 'https://pbs.twimg.com/media/EEAYRiuX4AEtTsW?format=jpg',
+  reply = 35,
+  retweet = 0,
+  like = 1907
 }) {
   return (
     <div className={cn([styles.container])}>
       <div className={styles.photo}>
-        <ProfilePhoto />
+        <ProfilePhoto src={photo} />
       </div>
       <div className={styles.body}>
         <div className={styles.default}>
           <div className={styles.header}>
-            <TextBody bold>{name}</TextBody>
-            <TextBody className={styles.slug}>@{slug}</TextBody>
+            <TextBody bold className={styles.name}>
+              {name}
+            </TextBody>
+            <TextBody>@{slug}</TextBody>
             <span className={styles.dot}></span>
-            <TextBody className={styles.time}>{time}</TextBody>
+            <TextBody>{time}</TextBody>
             <div className={styles.icon}>
               <NavigationButton>
                 <ArrowBottom />
@@ -37,24 +43,14 @@ function TweetContainer({
             </div>
           </div>
           <div className={styles.tweet}>
-            <TextBody>
-              {tweet.split('\n').map((i) => {
-                return <p> {i} </p>
-              })}
-            </TextBody>
+            <TextBody>{tweet}</TextBody>
           </div>
         </div>
 
-        {image && (
-          <>
-            <div className={styles.image}>
-              <TweetImage src={image} />
-            </div>
-          </>
-        )}
+        {image && <TweetImage src={image} />}
 
         <div className={styles.footer}>
-          <TweetButtons />
+          <TweetButtons reply={reply} retweet={retweet} like={like} />
         </div>
       </div>
     </div>

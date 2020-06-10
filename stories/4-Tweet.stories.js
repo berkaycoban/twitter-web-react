@@ -20,7 +20,7 @@ export const EditorButtons = () => <TweetEditorButtons />
 
 export const Editor = () => <TweetEditor />
 
-export const Image = () => <TweetImage />
+export const TweetImg = () => <TweetImage />
 
 export const TweetBtns = () => <TweetButtons />
 

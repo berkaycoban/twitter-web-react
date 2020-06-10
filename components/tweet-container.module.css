@@ -30,20 +30,15 @@
   position: relative;
   display: flex;
   align-items: center;
+  color: var(--c-gray);
 
   * + * {
     margin-left: 10px;
   }
 
-  .slug,
-  .dot,
-  .time {
-    color: var(--c-gray);
+  .name {
+    color: var(--c-text-color);
   }
-}
-
-.tweet {
-  padding-right: 20px;
 }
 
 .dot {
@@ -59,24 +54,21 @@
   max-width: 27px;
   max-height: 27px;
 
+  * {
+    color: inherit;
+  }
+
   button {
     padding: 5px;
   }
+
   svg {
     font-size: 1rem;
   }
 }
 
-.image {
-  position: relative;
-  overflow: hidden;
-  border-radius: 14px;
-
-  height: 180px;
-
-  @media (--m) {
-    height: 300px;
-  }
+.tweet {
+  padding-right: 20px;
 }
 
 .footer {

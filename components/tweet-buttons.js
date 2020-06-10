@@ -2,26 +2,26 @@ import React from 'react'
 
 import styles from './tweet-buttons.module.css'
 
+import tweetButtonColor from '../constants/tweet-button-color'
+
 import TweetButton from './buttons/tweet-button'
-import Stack from './stack'
 import { Reply, Retweet, Like, Share } from './icons'
 
-import { tweetButtonColor } from '../constants/'
-
-function TweetButtons() {
+function TweetButtons({ reply = 35, retweet = 10, like = 90 }) {
   return (
     <div className={styles.buttons}>
-      <TweetButton count={35}>
+      <TweetButton count={reply}>
         <Reply />
       </TweetButton>
       <TweetButton
+        count={retweet}
         color={tweetButtonColor.RETWEET}
         colorBg={tweetButtonColor.RETWEETBG}
       >
         <Retweet />
       </TweetButton>
       <TweetButton
-        count={1907}
+        count={like}
         color={tweetButtonColor.LIKE}
         colorBg={tweetButtonColor.LIKEBG}
       >

@@ -8,6 +8,7 @@ import ThemeButton from './buttons/theme-button'
 import ProfileBox from './profile-box'
 import { Tweet } from './icons'
 
+// To-do: scroll olunca asagiya kaymali
 function Sidebar({ flat, search }) {
   return (
     <div className={cn(styles.sidebar)}>
