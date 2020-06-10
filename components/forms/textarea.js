@@ -9,7 +9,7 @@ function Textarea({ className, children, size = 150, ...props }) {
     <textarea
       className={cn([styles.textarea, className])}
       placeholder={children}
-      maxlength={size}
+      maxLength={size}
       {...props}
     ></textarea>
   )

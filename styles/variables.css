@@ -15,5 +15,7 @@
 
   --c-focus-placeholder: #bdc1c9;
 
+  --c-input-background: rgb(32, 35, 39);
+
   --fade: 120ms;
 }

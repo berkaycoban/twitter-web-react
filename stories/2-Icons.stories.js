@@ -3,6 +3,9 @@ import React from 'react'
 import * as Icons from '../components/icons'
 import ProfilePhoto from '../components/images/profile-photo'
 import ProfileBox from '../components/profile-box'
+import Stack from '../components/stack'
+import Input from '../components/forms/input'
+import SearchInput from '../components/forms/search'
 
 export default {
   title: 'Icons'
@@ -46,3 +49,12 @@ export const Icon = () => (
 export const Photo = () => <ProfilePhoto />
 
 export const Box = () => <ProfileBox />
+
+export const FormElements = () => (
+  <>
+    <Stack>
+      <Input />
+      <SearchInput />
+    </Stack>
+  </>
+)

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--c-input-background);
+  color: var(--c-gray);
+
+  border-radius: 40px;
+  padding: 10px 20px;
+
+  &:focus-within {
+    border: 1px solid var(--c-theme);
+
+    svg {
+      color: var(--c-theme);
+    }
+  }
+}
+
+.icon {
+  background: transparent;
+  font-size: 18px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+
+  margin: 0;
+  background: transparent;
+
+  border: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  width: 100%;
+  color: var(--c-text-color);
+}
