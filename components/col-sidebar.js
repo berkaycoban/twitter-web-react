@@ -8,13 +8,13 @@ import ThemeButton from './buttons/theme-button'
 import ProfileBox from './profile-box'
 import { Tweet } from './icons'
 
-// To-do: scroll olunca asagiya kaymali
+// To-do: Scroll olunca asagiya kaymali
 function Sidebar({ flat, search }) {
   return (
-    <div className={cn(styles.sidebar)}>
+    <header className={cn(styles.sidebar)}>
       <Navigation flat={flat} search={search} />
 
-      <div className={styles.tweet}>
+      <div className={styles.tweetButton}>
         <ThemeButton big full={!flat} flat={flat}>
           {flat ? <Tweet /> : 'Tweet'}
         </ThemeButton>
@@ -23,7 +23,7 @@ function Sidebar({ flat, search }) {
       <div className={styles.profile}>
         <ProfileBox flat={flat} />
       </div>
-    </div>
+    </header>
   )
 }
 

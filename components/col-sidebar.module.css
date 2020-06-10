@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
 
+  height: 100vh;
+
   padding-left: 10px;
   padding-right: 10px;
 
@@ -16,7 +18,7 @@
   }
 }
 
-.tweet {
+.tweetButton {
   margin-top: 10px;
   margin-bottom: 20px;
 
