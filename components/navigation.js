@@ -91,6 +91,8 @@ const MENU = [
   }
 ]
 
+// To-do: Twitter Icon Hover Degistir.
+
 function Navigation({ flat = false, search = false, selectedKey = 'home' }) {
   return (
     <nav className={styles.nav}>

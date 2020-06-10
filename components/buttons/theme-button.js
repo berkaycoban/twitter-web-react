@@ -5,6 +5,8 @@ import Button from './button'
 
 import styles from './theme-button.module.css'
 
+// To-do: Tweet Icon sayfa yenilendiginde patliyo
+
 function ThemeButton({
   className,
   children,
