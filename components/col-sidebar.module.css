@@ -8,7 +8,7 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  @media (--m) {
+  @media (--t) {
     padding-left: 20px;
     padding-right: 20px;
   }

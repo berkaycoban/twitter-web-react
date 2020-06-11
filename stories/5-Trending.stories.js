@@ -2,8 +2,8 @@ import React from 'react'
 
 import Stack from '../components/stack'
 import ListItem from '../components/list-item'
-import TrendingItem from '../components/trending/trending-item'
-import WidgetHeader from '../components/trending/widget-header'
+import TrendingItem from '../components/extra/trending-item'
+import WidgetHeader from '../components/extra/widget-header'
 import NavigationButton from '../components/buttons/navigation-button'
 import Trending from '../components/trending'
 

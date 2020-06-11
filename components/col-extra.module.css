@@ -1,2 +1,19 @@
 .extra {
+  padding: 5px 20px;
+
+  @media (--t) {
+    min-width: 280px;
+  }
+
+  @media (--d) {
+    min-width: 350px;
+  }
+}
+
+.search {
+  margin-bottom: 15px;
+}
+
+.trending {
+  margin-bottom: 15px;
 }

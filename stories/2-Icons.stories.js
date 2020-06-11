@@ -7,7 +7,7 @@ import Stack from '../components/stack'
 import Input from '../components/forms/input'
 import SearchInput from '../components/forms/search'
 import ListItem from '../components/list-item'
-import TrendingItem from '../components/trending/trending-item'
+import TrendingItem from '../components/extra/trending-item'
 import NavigationButton from '../components/buttons/navigation-button'
 import Title from '../components/title'
 
