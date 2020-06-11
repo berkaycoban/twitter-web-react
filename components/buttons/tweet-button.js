@@ -5,11 +5,7 @@ import Button from './button'
 
 import styles from './tweet-button.module.css'
 
-function countFormatter(count) {
-  return Math.abs(count) > 999
-    ? Math.sign(count) * (Math.abs(count) / 1000).toFixed(1) + 'K'
-    : Math.sign(count) * Math.abs(count)
-}
+import countFormatter from '../../helpers/count-formatter'
 
 function TweetButton({ count, children, color = '', colorBg = '', ...props }) {
   return (

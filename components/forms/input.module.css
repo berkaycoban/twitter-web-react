@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  background-color: var(--c-input-background);
+  background-color: var(--c-primary-2);
   color: var(--c-gray);
 
   border-radius: 40px;

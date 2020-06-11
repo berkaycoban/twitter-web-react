@@ -6,6 +6,8 @@ import ProfileBox from '../components/profile-box'
 import Stack from '../components/stack'
 import Input from '../components/forms/input'
 import SearchInput from '../components/forms/search'
+import ListItem from '../components/list-item'
+import TrendingItem from '../components/trending-item'
 
 export default {
   title: 'Icons'
@@ -55,6 +57,15 @@ export const FormElements = () => (
     <Stack>
       <Input />
       <SearchInput />
+    </Stack>
+  </>
+)
+
+export const List = () => (
+  <>
+    <Stack column>
+      <ListItem></ListItem>
+      <TrendingItem />
     </Stack>
   </>
 )

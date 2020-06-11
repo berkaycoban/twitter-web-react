@@ -1,0 +1,35 @@
+.trending {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  * + * {
+    margin-top: 2px;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  z-index: 2;
+
+  max-width: 27px;
+  max-height: 27px;
+
+  color: var(--c-gray);
+
+  * {
+    color: inherit;
+  }
+
+  button {
+    padding: 5px;
+  }
+
+  svg {
+    color: inherit;
+    font-size: 1rem;
+  }
+}

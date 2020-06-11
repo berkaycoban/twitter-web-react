@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.stack > div {
+.stack > * {
   margin-right: 10px;
 }
 
@@ -13,6 +13,6 @@
   flex-direction: column;
 }
 
-.column > div {
+.column > * {
   margin-bottom: 10px;
 }
