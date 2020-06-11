@@ -3,10 +3,10 @@ import cn from 'classnames'
 
 import styles from './text-small.module.css'
 
-function TextSmall({ normal = false, className, children, ...props }) {
+function TextSmall({ extraSmall, className, children, ...props }) {
   return (
     <span
-      className={cn([styles.small, normal && styles.normal, className])}
+      className={cn([styles.small, extraSmall && styles.extraSmall, className])}
       {...props}
     >
       {children}

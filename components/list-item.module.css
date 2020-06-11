@@ -1,14 +1,7 @@
 .listItem {
   background-color: var(--c-primary-2);
-
   position: relative;
-  padding: 10px;
-  width: 100%;
-
-  border-top: 1px;
-  border-bottom: 1px;
-  border-style: solid;
-  border-color: var(--c-border-color);
+  padding: 10px 15px;
 
   transition: all var(--fade);
 
@@ -29,4 +22,11 @@
   &:hover {
     background-color: var(--c-primary-2-hover);
   }
+}
+
+.border {
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--c-border-color);
 }

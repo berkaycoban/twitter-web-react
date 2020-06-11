@@ -8,6 +8,7 @@ import TextBody from './typography/text-body'
 import NavigationButton from './buttons/navigation-button'
 import TweetImage from './images/tweet-image'
 import TweetButtons from './tweet-buttons'
+import TextSmall from './typography/text-small'
 
 import { ArrowBottom } from './icons'
 
@@ -33,9 +34,11 @@ function TweetContainer({
             <TextBody bold className={styles.name}>
               {name}
             </TextBody>
-            <TextBody>@{slug}</TextBody>
-            <span className={styles.dot}></span>
-            <TextBody>{time}</TextBody>
+            <TextSmall>@{slug}</TextSmall>
+            <TextSmall>
+              <span className={styles.dot}></span>
+            </TextSmall>
+            <TextSmall>{time}</TextSmall>
             <div className={styles.icon}>
               <NavigationButton>
                 <ArrowBottom />

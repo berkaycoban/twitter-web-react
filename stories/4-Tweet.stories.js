@@ -7,12 +7,27 @@ import TweetEditorButtons from '../components/tweet-editor-buttons'
 import PageTitle from '../components/page-title'
 import TweetContainer from '../components/tweet-container'
 import TweetButtons from '../components/tweet-buttons'
+import NavigationButton from '../components/buttons/navigation-button'
+import { Messages, TimelineProp } from '../components/icons'
 
 export default {
   title: 'Tweet'
 }
 
-export const Title = () => <PageTitle></PageTitle>
+export const PageTitlee = () => (
+  <>
+    <PageTitle name="Home">
+      <NavigationButton>
+        <TimelineProp />
+      </NavigationButton>
+    </PageTitle>
+    <PageTitle name="Messages">
+      <NavigationButton>
+        <Messages />
+      </NavigationButton>
+    </PageTitle>
+  </>
+)
 
 export const EditorTextarea = () => <TweetTextarea />
 

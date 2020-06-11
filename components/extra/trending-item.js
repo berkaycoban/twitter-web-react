@@ -2,13 +2,13 @@ import React from 'react'
 
 import styles from './trending-item.module.css'
 
-import ListItem from './list-item'
-import TextBody from './typography/text-body'
-import TextSmall from './typography/text-small'
-import NavigationButton from './buttons/navigation-button'
-import { ArrowBottom } from './icons'
+import ListItem from '../list-item'
+import TextBody from '../typography/text-body'
+import TextSmall from '../typography/text-small'
+import NavigationButton from '../buttons/navigation-button'
+import { ArrowBottom } from '../icons'
 
-import countFormatter from '../helpers/count-formatter'
+import countFormatter from '../../helpers/count-formatter'
 
 function TrendingItem({
   trending = 'Trending in Turkey',
@@ -17,10 +17,9 @@ function TrendingItem({
 }) {
   return (
     <ListItem className={styles.trending}>
-      <TextSmall>{trending}</TextSmall>
+      <TextSmall extraSmall>{trending}</TextSmall>
       <TextBody bold>{title}</TextBody>
-      <TextSmall normal>{countFormatter(tweet)} Tweets</TextSmall>
-
+      {tweet > 0 && <TextSmall>{countFormatter(tweet)} Tweets</TextSmall>}
       <div className={styles.icon}>
         <NavigationButton>
           <ArrowBottom />
