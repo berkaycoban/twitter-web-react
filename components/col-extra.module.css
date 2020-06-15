@@ -17,3 +17,32 @@
 .trending {
   margin-bottom: 15px;
 }
+
+.follow {
+  margin-bottom: 15px;
+}
+
+.info {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  * {
+    display: inherit;
+    align-items: inherit;
+
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+}
+
+.copyright {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5px;
+}
