@@ -1,6 +1,6 @@
 .tweetButton {
   --hoverColor: var(--c-theme);
-  --hoverBgColor: var(--c-theme-20);
+  --hoverBgColor: var(--c-theme-10);
 
   display: flex;
   align-items: center;

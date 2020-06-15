@@ -1,5 +1,19 @@
-.nav {
+.logo {
   margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+.twitterIcon {
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    color: inherit;
+  }
+}
+
+.nav {
   button {
     & + button {
       margin-top: 8px;

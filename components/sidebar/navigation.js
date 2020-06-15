@@ -1,5 +1,4 @@
 import React from 'react'
-import cn from 'classnames'
 
 import styles from './navigation.module.css'
 
@@ -27,13 +26,6 @@ import {
 
 const MENU = [
   {
-    key: 'twitter',
-    icon: <Twitter />,
-    iconSelected: <Twitter />,
-    title: '',
-    notify: 0
-  },
-  {
     key: 'home',
     icon: <Home />,
     iconSelected: <HomeFill />,
@@ -51,7 +43,7 @@ const MENU = [
     key: 'notification',
     icon: <Notification />,
     iconSelected: <NotificationFill />,
-    title: 'Notification',
+    title: 'Notifications',
     notify: 17
   },
   {
@@ -65,7 +57,7 @@ const MENU = [
     key: 'bookmark',
     icon: <Bookmark />,
     iconSelected: <BookmarkFill />,
-    title: 'Bookmark',
+    title: 'Bookmarks',
     notify: 0
   },
   {
@@ -91,36 +83,41 @@ const MENU = [
   }
 ]
 
-// To-do: Twitter Icon Hover Degistir.
-
 function Navigation({ flat = false, search = false, selectedKey = 'home' }) {
   return (
-    <nav className={styles.nav}>
-      {MENU.map((menu) => {
-        const showTitle = !flat && menu.title.length > 0
-        const selected = selectedKey === menu.key
-        const showSearch = search && menu.key === 'explore'
+    <>
+      <div className={styles.logo}>
+        <NavigationButton className={styles.twitterIcon}>
+          <Twitter />
+        </NavigationButton>
+      </div>
+      <nav className={styles.nav}>
+        {MENU.map((menu) => {
+          const showTitle = !flat && menu.title.length > 0
+          const selected = selectedKey === menu.key
+          const showSearch = search && menu.key === 'explore'
 
-        return (
-          <>
-            {showSearch ? (
-              <NavigationButton key={'search'} notify={0}>
-                <Search />
-              </NavigationButton>
-            ) : (
-              <NavigationButton
-                key={menu.key}
-                notify={menu.notify}
-                selected={selected}
-              >
-                {selected ? menu.iconSelected : menu.icon}
-                {showTitle && <TextTitle>{menu.title}</TextTitle>}
-              </NavigationButton>
-            )}
-          </>
-        )
-      })}
-    </nav>
+          return (
+            <>
+              {showSearch ? (
+                <NavigationButton key={'search'} notify={0}>
+                  <Search />
+                </NavigationButton>
+              ) : (
+                <NavigationButton
+                  key={menu.key}
+                  notify={menu.notify}
+                  selected={selected}
+                >
+                  {selected ? menu.iconSelected : menu.icon}
+                  {showTitle && <TextTitle>{menu.title}</TextTitle>}
+                </NavigationButton>
+              )}
+            </>
+          )
+        })}
+      </nav>
+    </>
   )
 }
 

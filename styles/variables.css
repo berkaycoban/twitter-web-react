@@ -4,8 +4,8 @@
   --c-primary-2: rgb(32, 35, 39);
   --c-primary-2-hover: rgba(255, 255, 255, 0.03);
   --c-theme: rgba(29, 161, 242, 1);
-  --c-theme-20: rgba(53, 166, 236, 0.2);
-  --c-text-color: #fff;
+  --c-theme-10: rgba(29, 161, 242, 0.1);
+  --c-text-color: rgb(217, 217, 217);
   --c-border-color: #2f3336;
   --c-gray: #6e767d;
   --c-dark-gray: #202327;
