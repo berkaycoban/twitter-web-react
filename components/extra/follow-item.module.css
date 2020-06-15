@@ -1,0 +1,31 @@
+.follow {
+  display: flex;
+  align-items: center;
+}
+
+.body {
+  margin-left: 10px;
+  padding-right: 15px;
+}
+
+.nameButton:hover {
+  background-color: transparent;
+  color: var(--c-text-color);
+}
+
+.name {
+  z-index: 2;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button {
+  z-index: 2;
+  margin-left: auto;
+  padding: 4px 15px;
+  border: 1px solid var(--c-theme);
+  color: var(--c-theme);
+  font-weight: bold;
+}

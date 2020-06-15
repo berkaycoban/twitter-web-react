@@ -1,10 +1,7 @@
 .widgetFooter {
   background-color: var(--c-primary-2);
-
-  padding: 0;
+  color: var(--c-theme);
 
   padding-top: 5px;
   padding-bottom: 5px;
-
-  color: var(--c-theme);
 }

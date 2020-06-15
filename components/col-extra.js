@@ -5,6 +5,7 @@ import styles from './col-extra.module.css'
 
 import Search from './forms/search'
 import Trending from './extra/trending'
+import Follow from './extra/follow'
 
 function Extra() {
   return (
@@ -14,6 +15,9 @@ function Extra() {
       </div>
       <div className={styles.trending}>
         <Trending />
+      </div>
+      <div className={styles.follow}>
+        <Follow />
       </div>
     </div>
   )

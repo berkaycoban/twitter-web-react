@@ -10,11 +10,11 @@ import TrendingItem from './trending-item'
 
 import WidgetFooter from './widget-footer'
 
-function Trending({ className, children }) {
+function Trending({ className }) {
   return (
     <>
       <div className={cn([styles.container, className])}>
-        <WidgetHeader name="Trends for you" className={styles.header}>
+        <WidgetHeader name="Trends for you">
           <NavigationButton>
             <Options />
           </NavigationButton>
