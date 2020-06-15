@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import Sidebar from '../components/col-sidebar'
 import Main from '../components/col-main'
 import Extra from '../components/col-extra'
-import TweetContainer from '../components/tweet-container'
+import TweetContainer from '../components/main/tweet-container'
 
 import useWindowSize from '../hooks/useWindowSize'
 

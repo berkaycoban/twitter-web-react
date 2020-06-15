@@ -1,18 +1,16 @@
 import React from 'react'
 
 import * as Icons from '../components/icons'
-import ProfilePhoto from '../components/images/profile-photo'
-import ProfileBox from '../components/profile-box'
-import Stack from '../components/stack'
+import Stack from '../components/helpers/stack'
 import Input from '../components/forms/input'
 import SearchInput from '../components/forms/search'
-import ListItem from '../components/list-item'
+import ListItem from '../components/helpers/list-item'
 import TrendingItem from '../components/extra/trending-item'
 import NavigationButton from '../components/buttons/navigation-button'
-import Title from '../components/title'
+import Title from '../components/helpers/title'
 
 export default {
-  title: 'Icons'
+  title: 'Helpers'
 }
 
 export const Icon = () => (
@@ -50,10 +48,6 @@ export const Icon = () => (
   </div>
 )
 
-export const Photo = () => <ProfilePhoto />
-
-export const Box = () => <ProfileBox />
-
 export const FormElements = () => (
   <>
     <Stack>
@@ -72,7 +66,7 @@ export const List = () => (
   </>
 )
 
-export const PageTitle = () => (
+export const Titlee = () => (
   <>
     <Stack column>
       <Title></Title>

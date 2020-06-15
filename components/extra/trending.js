@@ -3,12 +3,12 @@ import cn from 'classnames'
 
 import styles from './trending.module.css'
 
-import WidgetHeader from './extra/widget-header'
-import NavigationButton from './buttons/navigation-button'
-import { Options } from './icons'
-import TrendingItem from './extra/trending-item'
+import WidgetHeader from './widget-header'
+import NavigationButton from '../buttons/navigation-button'
+import { Options } from '../icons'
+import TrendingItem from './trending-item'
 
-import WidgetFooter from './extra/widget-footer'
+import WidgetFooter from './widget-footer'
 
 function Trending({ className, children }) {
   return (

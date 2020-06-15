@@ -4,7 +4,7 @@ import cn from 'classnames'
 import styles from './col-extra.module.css'
 
 import Search from './forms/search'
-import Trending from './trending'
+import Trending from './extra/trending'
 
 function Extra() {
   return (

@@ -3,9 +3,9 @@ import cn from 'classnames'
 
 import styles from './tweet-editor.module.css'
 
-import ProfilePhoto from './images/profile-photo'
-import ThemeButton from './buttons/theme-button'
-import TweetTextarea from './forms/tweet-textarea'
+import ProfilePhoto from '../sidebar/profile-photo'
+import ThemeButton from '../buttons/theme-button'
+import TweetTextarea from '../forms/tweet-textarea'
 import TweetEditorButtons from './tweet-editor-buttons'
 
 function TweetEditor() {

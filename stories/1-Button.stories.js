@@ -6,9 +6,8 @@ import tweetButtonColor from '../constants/tweet-button-color'
 import Button from '../components/buttons/button'
 import ThemeButton from '../components/buttons/theme-button'
 import NavigationButton from '../components/buttons/navigation-button'
-import Navigation from '../components/navigation'
 import TextTitle from '../components/typography/text-title'
-import Stack from '../components/stack'
+import Stack from '../components/helpers/stack'
 import TweetButton from '../components/buttons/tweet-button'
 import { Home, Tweet, Reply, Retweet } from '../components/icons'
 
@@ -61,8 +60,3 @@ export const NavButton = () => (
     <TextTitle>Home</TextTitle>
   </NavigationButton>
 )
-
-export const Nav = () => {
-  const flat = boolean('Flat', false)
-  return <Navigation flat={flat} selectedKey="home" />
-}

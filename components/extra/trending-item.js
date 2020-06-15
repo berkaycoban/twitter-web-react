@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './trending-item.module.css'
 
-import ListItem from '../list-item'
+import ListItem from '../helpers/list-item'
 import TextBody from '../typography/text-body'
 import TextSmall from '../typography/text-small'
 import NavigationButton from '../buttons/navigation-button'

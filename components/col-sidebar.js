@@ -3,9 +3,9 @@ import cn from 'classnames'
 
 import styles from './col-sidebar.module.css'
 
-import Navigation from './navigation'
+import Navigation from './sidebar/navigation'
 import ThemeButton from './buttons/theme-button'
-import ProfileBox from './profile-box'
+import ProfileBox from './sidebar/profile-box'
 import { Tweet } from './icons'
 
 // To-do: Scroll olunca asagiya kaymali

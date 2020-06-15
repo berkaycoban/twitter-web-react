@@ -3,10 +3,10 @@ import cn from 'classnames'
 
 import styles from './profile-box.module.css'
 
-import ProfilePhoto from './images/profile-photo'
-import { ArrowBottom } from './icons'
-import Button from './buttons/button'
-import TextBody from './typography/text-body'
+import ProfilePhoto from './profile-photo'
+import { ArrowBottom } from '../icons'
+import Button from '../buttons/button'
+import TextBody from '../typography/text-body'
 
 function ProfileBox({
   flat = false,

@@ -2,10 +2,10 @@ import React from 'react'
 
 import styles from './tweet-buttons.module.css'
 
-import tweetButtonColor from '../constants/tweet-button-color'
+import tweetButtonColor from '../../constants/tweet-button-color'
 
-import TweetButton from './buttons/tweet-button'
-import { Reply, Retweet, Like, Share } from './icons'
+import TweetButton from '../buttons/tweet-button'
+import { Reply, Retweet, Like, Share } from '../icons'
 
 function TweetButtons({ reply = 35, retweet = 10, like = 90 }) {
   return (

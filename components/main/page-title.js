@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './page-title.module.css'
 
-import Title from './title'
+import Title from '../helpers/title'
 
 function PageTitle({ name = 'Home', children }) {
   return (

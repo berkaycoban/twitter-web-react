@@ -4,7 +4,7 @@ import cn from 'classnames'
 import styles from './widget-footer.module.css'
 
 import TextBody from '../typography/text-body'
-import ListItem from '../list-item'
+import ListItem from '../helpers/list-item'
 
 function WidgetFooter({ children = 'Show more' }) {
   return (

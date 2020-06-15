@@ -3,8 +3,8 @@ import cn from 'classnames'
 
 import styles from './navigation.module.css'
 
-import NavigationButton from './buttons/navigation-button'
-import TextTitle from './typography/text-title'
+import NavigationButton from '../buttons/navigation-button'
+import TextTitle from '../typography/text-title'
 import {
   Twitter,
   Home,
@@ -23,7 +23,7 @@ import {
   ListsFill,
   ProfileFill,
   Search
-} from './icons'
+} from '../icons'
 
 const MENU = [
   {

@@ -1,16 +1,16 @@
 import React from 'react'
 
-import Stack from '../components/stack'
-import ListItem from '../components/list-item'
+import Stack from '../components/helpers/stack'
+import ListItem from '../components/helpers/list-item'
 import TrendingItem from '../components/extra/trending-item'
 import WidgetHeader from '../components/extra/widget-header'
 import NavigationButton from '../components/buttons/navigation-button'
-import Trending from '../components/trending'
+import Trending from '../components/extra/trending'
 
 import { Options } from '../components/icons'
 
 export default {
-  title: 'Trending'
+  title: 'Extra'
 }
 
 export const List = () => (
@@ -36,7 +36,7 @@ export const WidgetTitle = () => (
   </>
 )
 
-export const Trend = () => (
+export const TrendingModule = () => (
   <>
     <Trending />
   </>

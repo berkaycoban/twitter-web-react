@@ -3,9 +3,9 @@ import cn from 'classnames'
 
 import styles from './col-main.module.css'
 
-import PageTitle from './page-title'
+import PageTitle from './main/page-title'
 import NavigationButton from './buttons/navigation-button'
-import TweetEditor from './tweet-editor'
+import TweetEditor from './main/tweet-editor'
 
 import { TimelineProp } from './icons'
 

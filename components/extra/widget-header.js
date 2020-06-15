@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './widget-header.module.css'
 
-import Title from '../title'
+import Title from '../helpers/title'
 
 function WidgetHeader({ name = 'Home', children }) {
   return (

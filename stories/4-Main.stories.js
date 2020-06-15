@@ -1,17 +1,17 @@
 import React from 'react'
 
-import TweetImage from '../components/images/tweet-image'
-import TweetEditor from '../components/tweet-editor'
+import TweetImage from '../components/main/tweet-image'
+import TweetEditor from '../components/main/tweet-editor'
 import TweetTextarea from '../components/forms/tweet-textarea'
-import TweetEditorButtons from '../components/tweet-editor-buttons'
-import PageTitle from '../components/page-title'
-import TweetContainer from '../components/tweet-container'
-import TweetButtons from '../components/tweet-buttons'
+import TweetEditorButtons from '../components/main/tweet-editor-buttons'
+import PageTitle from '../components/main/page-title'
+import TweetContainer from '../components/main/tweet-container'
+import TweetButtons from '../components/main/tweet-buttons'
 import NavigationButton from '../components/buttons/navigation-button'
 import { Messages, TimelineProp } from '../components/icons'
 
 export default {
-  title: 'Tweet'
+  title: 'Main'
 }
 
 export const PageTitlee = () => (
