@@ -3,7 +3,7 @@ import cn from 'classnames'
 
 import styles from './profile-box.module.css'
 
-import ProfilePhoto from './profile-photo'
+import ProfilePhoto from '../helpers/profile-photo'
 import { ArrowBottom } from '../icons'
 import Button from '../buttons/button'
 import TextBody from '../typography/text-body'

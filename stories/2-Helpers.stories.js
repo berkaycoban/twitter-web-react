@@ -8,6 +8,7 @@ import ListItem from '../components/helpers/list-item'
 import TrendingItem from '../components/extra/trending-item'
 import NavigationButton from '../components/buttons/navigation-button'
 import Title from '../components/helpers/title'
+import ProfilePhoto from '../components/helpers/profile-photo'
 
 export default {
   title: 'Helpers'
@@ -78,3 +79,5 @@ export const Titlee = () => (
     </Stack>
   </>
 )
+
+export const Photo = () => <ProfilePhoto />

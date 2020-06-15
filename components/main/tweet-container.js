@@ -3,7 +3,7 @@ import cn from 'classnames'
 
 import styles from './tweet-container.module.css'
 
-import ProfilePhoto from '../sidebar/profile-photo'
+import ProfilePhoto from '../helpers/profile-photo'
 import TextBody from '../typography/text-body'
 import NavigationButton from '../buttons/navigation-button'
 import TweetImage from './tweet-image'
