@@ -1,5 +1,6 @@
 .extra {
-  padding: 5px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (--t) {
     min-width: 280px;
@@ -11,7 +12,16 @@
 }
 
 .search {
-  margin-bottom: 15px;
+  background-color: var(--c-primary);
+  margin-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: auto;
+  z-index: 9;
+  top: 0;
 }
 
 .trending {
