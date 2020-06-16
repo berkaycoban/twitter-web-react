@@ -15,7 +15,7 @@ function Sidebar({ flat, search }) {
       <Navigation flat={flat} search={search} />
 
       <div className={styles.tweetButton}>
-        <ThemeButton big full={!flat} flat={flat}>
+        <ThemeButton big full={!flat} flat={true}>
           {flat ? <Tweet /> : 'Tweet'}
         </ThemeButton>
       </div>
