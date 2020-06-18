@@ -18,13 +18,18 @@
 
 /* To-do: Yuvarlak degil. */
 .notify {
-  position: absolute;
-  left: 23px;
-  top: 5px;
-  padding: 3px 5px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 5px;
+  left: 25px;
+
+  border-radius: 50%;
+  min-width: 1.5em;
+  height: 1.5em;
+
   background-color: var(--c-theme);
   color: var(--c-text-color);
   font-size: 11px;
