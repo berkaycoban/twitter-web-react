@@ -4,8 +4,6 @@ import * as Icons from '../components/icons'
 import Stack from '../components/helpers/stack'
 import Input from '../components/forms/input'
 import SearchInput from '../components/forms/search'
-import ListItem from '../components/helpers/list-item'
-import TrendingItem from '../components/extra/trending-item'
 import NavigationButton from '../components/buttons/navigation-button'
 import Title from '../components/helpers/title'
 import ProfilePhoto from '../components/helpers/profile-photo'
@@ -54,15 +52,6 @@ export const FormElements = () => (
     <Stack>
       <Input />
       <SearchInput />
-    </Stack>
-  </>
-)
-
-export const List = () => (
-  <>
-    <Stack column>
-      <ListItem></ListItem>
-      <TrendingItem />
     </Stack>
   </>
 )

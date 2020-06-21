@@ -14,7 +14,7 @@ export default {
   title: 'Main'
 }
 
-export const PageTitlee = () => (
+export const Title = () => (
   <>
     <PageTitle name="Home">
       <NavigationButton>
