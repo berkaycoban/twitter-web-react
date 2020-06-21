@@ -5,7 +5,7 @@ import styles from './profile-photo.module.css'
 
 function ProfilePhoto({
   src = 'https://pbs.twimg.com/profile_images/1270075367949205507/WlwJibzU_400x400.jpg',
-  alt,
+  alt = '',
   size = 47
 }) {
   return (

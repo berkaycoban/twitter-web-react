@@ -5,7 +5,7 @@ import styles from './tweet-image.module.css'
 
 function TweetImage({
   src = 'https://pbs.twimg.com/media/EaAPZ9kXQAAcs6n?format=png&name=small',
-  alt
+  alt = ''
 }) {
   return (
     <div className={cn([styles.tweetImage])}>
