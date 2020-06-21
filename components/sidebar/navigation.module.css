@@ -14,9 +14,7 @@
 }
 
 .nav {
-  button {
-    & + button {
-      margin-top: 8px;
-    }
+  a + a {
+    margin-top: 8px;
   }
 }

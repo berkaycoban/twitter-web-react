@@ -4,86 +4,11 @@ import styles from './navigation.module.css'
 
 import NavigationButton from '../buttons/navigation-button'
 import TextTitle from '../typography/text-title'
-import {
-  Twitter,
-  Home,
-  Explore,
-  Notification,
-  Messages,
-  Bookmark,
-  Lists,
-  Profile,
-  More,
-  HomeFill,
-  ExplorerFill,
-  NotificationFill,
-  MessagesFill,
-  BookmarkFill,
-  ListsFill,
-  ProfileFill,
-  Search
-} from '../icons'
+import { Twitter, Search } from '../icons'
 
-const MENU = [
-  {
-    key: 'home',
-    icon: <Home />,
-    iconSelected: <HomeFill />,
-    title: 'Home',
-    notify: 0
-  },
-  {
-    key: 'explore',
-    icon: <Explore />,
-    iconSelected: <ExplorerFill />,
-    title: 'Explore',
-    notify: 0
-  },
-  {
-    key: 'notification',
-    icon: <Notification />,
-    iconSelected: <NotificationFill />,
-    title: 'Notifications',
-    notify: 17
-  },
-  {
-    key: 'messages',
-    icon: <Messages />,
-    iconSelected: <MessagesFill />,
-    title: 'Messages',
-    notify: 0
-  },
-  {
-    key: 'bookmark',
-    icon: <Bookmark />,
-    iconSelected: <BookmarkFill />,
-    title: 'Bookmarks',
-    notify: 0
-  },
-  {
-    key: 'lists',
-    icon: <Lists />,
-    iconSelected: <ListsFill />,
-    title: 'Lists',
-    notify: 0
-  },
-  {
-    key: 'profile',
-    icon: <Profile />,
-    iconSelected: <ProfileFill />,
-    title: 'Profile',
-    notify: 0
-  },
-  {
-    key: 'more',
-    icon: <More />,
-    iconSelected: <More />,
-    title: 'More',
-    notify: 0
-  }
-]
+import MENU from '../../constants/navigation'
 
-function Navigation({ flat = false, search = false, selectedKey = 'home' }) {
+function Navigation({ flat = false, search = false, selectedKey = '/' }) {
   return (
     <>
       <div className={styles.logo}>
@@ -94,7 +19,7 @@ function Navigation({ flat = false, search = false, selectedKey = 'home' }) {
       <nav className={styles.nav}>
         {MENU.map((menu) => {
           const showTitle = !flat && menu.title.length > 0
-          const selected = selectedKey === menu.key
+          const selected = selectedKey === menu.href
           const showSearch = search && menu.key === 'explore'
 
           return (
@@ -108,6 +33,7 @@ function Navigation({ flat = false, search = false, selectedKey = 'home' }) {
                   key={menu.key}
                   notify={menu.notify}
                   selected={selected}
+                  href={menu.href}
                 >
                   {selected ? menu.iconSelected : menu.icon}
                   {showTitle && <TextTitle>{menu.title}</TextTitle>}

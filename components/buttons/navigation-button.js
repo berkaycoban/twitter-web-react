@@ -4,9 +4,17 @@ import cn from 'classnames'
 import Button from './button'
 import styles from './navigation-button.module.css'
 
-function NavigationButton({ notify, selected, children, className, ...props }) {
+function NavigationButton({
+  notify,
+  selected,
+  children,
+  className,
+  href,
+  ...props
+}) {
   return (
     <Button
+      href={href}
       className={cn([
         styles.navButton,
         selected && styles.navButtonSelected,
