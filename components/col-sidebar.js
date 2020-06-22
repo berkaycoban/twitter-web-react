@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRouter } from 'next/router'
+
 import cn from 'classnames'
 
 import styles from './col-sidebar.module.css'
@@ -10,11 +10,9 @@ import ProfileBox from './sidebar/profile-box'
 import { Tweet } from './icons'
 
 function Sidebar({ flat, search }) {
-  const router = useRouter()
-
   return (
     <header className={cn(styles.sidebar)}>
-      <Navigation flat={flat} search={search} selectedKey={router.asPath} />
+      <Navigation flat={flat} search={search} />
 
       <div className={styles.tweetButton}>
         <ThemeButton big full={!flat} flat={true}>

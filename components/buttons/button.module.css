@@ -5,7 +5,7 @@
   border-radius: 99px;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   transition: var(--fade);
   text-decoration: none;
 

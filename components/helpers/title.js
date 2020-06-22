@@ -4,11 +4,11 @@ import cn from 'classnames'
 import TextTitle from '../typography/text-title'
 import styles from './title.module.css'
 
-function Title({ name = 'Home', children, className }) {
+function Title({ title = 'Home', children, className }) {
   return (
     <div className={cn([styles.title, className])}>
       <div className={styles.body}>
-        <TextTitle>{name}</TextTitle>
+        <TextTitle extra>{title}</TextTitle>
       </div>
 
       {children && <div className={styles.icon}>{children}</div>}

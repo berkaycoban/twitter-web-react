@@ -5,11 +5,11 @@ import Button from './button'
 import styles from './navigation-button.module.css'
 
 function NavigationButton({
+  href,
   notify,
   selected,
   children,
   className,
-  href,
   ...props
 }) {
   return (

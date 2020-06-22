@@ -1,27 +1,17 @@
 import React from 'react'
 
-import mediaSize from '../constants/custom-media-size'
 import staticTweets from '../constants/static-tweets'
 
 import Layout from '../components/layout'
-import Sidebar from '../components/col-sidebar'
-import Main from '../components/col-main'
-import Extra from '../components/col-extra'
+import TweetEditor from '../components/main/tweet-editor'
 import TweetContainer from '../components/main/tweet-container'
-
-import useWindowSize from '../hooks/useWindowSize'
+import { TimelineProp } from '../components/icons'
 
 function HomePage() {
-  const size = useWindowSize()
-
   return (
-    <Layout>
-      <Sidebar
-        flat={size.width < mediaSize.DESKTOP_SIZE}
-        search={size.width < mediaSize.TABLET_SIZE}
-      ></Sidebar>
-
-      <Main>
+    <>
+      <Layout pageTitle="Home" titleIcon={<TimelineProp />}>
+        <TweetEditor />
         {staticTweets.map((t) => {
           return (
             <TweetContainer
@@ -37,10 +27,8 @@ function HomePage() {
             />
           )
         })}
-      </Main>
-
-      {size.width > mediaSize.TABLET_SIZE && <Extra>extra</Extra>}
-    </Layout>
+      </Layout>
+    </>
   )
 }
 

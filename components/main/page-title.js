@@ -4,9 +4,9 @@ import styles from './page-title.module.css'
 
 import Title from '../helpers/title'
 
-function PageTitle({ name = 'Home', children }) {
+function PageTitle({ title, children }) {
   return (
-    <Title name={name} className={styles.pageTitle}>
+    <Title title={title} className={styles.pageTitle}>
       {children}
     </Title>
   )

@@ -5,20 +5,13 @@ import styles from './col-main.module.css'
 
 import PageTitle from './main/page-title'
 import NavigationButton from './buttons/navigation-button'
-import TweetEditor from './main/tweet-editor'
 
-import { TimelineProp } from './icons'
-
-function Main({ children }) {
+function Main({ pageTitle, titleIcon, children }) {
   return (
     <div className={cn(styles.main)}>
-      <PageTitle>
-        <NavigationButton>
-          <TimelineProp />
-        </NavigationButton>
+      <PageTitle title={pageTitle}>
+        {titleIcon && <NavigationButton>{titleIcon}</NavigationButton>}
       </PageTitle>
-      <TweetEditor />
-
       {children}
     </div>
   )

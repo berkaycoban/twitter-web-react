@@ -11,7 +11,7 @@ function Follow({ className }) {
   return (
     <>
       <div className={cn([styles.container, className])}>
-        <WidgetHeader name="Who to follow"></WidgetHeader>
+        <WidgetHeader title="Who to follow"></WidgetHeader>
 
         <FollowItem />
 

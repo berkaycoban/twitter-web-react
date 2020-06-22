@@ -1,20 +1,11 @@
-.logo {
-  margin-top: 2px;
-  margin-bottom: 8px;
-}
-
-.twitterIcon {
-  svg {
-    width: 30px;
-    height: 30px;
-  }
-  &:hover {
-    color: inherit;
-  }
-}
-
 .nav {
-  a + a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navButton {
+  & + & {
     margin-top: 8px;
   }
 }

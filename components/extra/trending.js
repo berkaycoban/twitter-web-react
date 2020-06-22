@@ -14,7 +14,7 @@ function Trending({ className }) {
   return (
     <>
       <div className={cn([styles.container, className])}>
-        <WidgetHeader name="Trends for you">
+        <WidgetHeader title="Trends for you">
           <NavigationButton>
             <Options />
           </NavigationButton>

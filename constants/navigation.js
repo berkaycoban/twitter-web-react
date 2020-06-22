@@ -1,86 +1,82 @@
-import {
-  Home,
-  Explore,
-  Notification,
-  Messages,
-  Bookmark,
-  Lists,
-  Profile,
-  More,
-  HomeFill,
-  ExplorerFill,
-  NotificationFill,
-  MessagesFill,
-  BookmarkFill,
-  ListsFill,
-  ProfileFill
-} from '../components/icons'
+import React from 'react'
+import * as Icon from '../components/icons'
 
 export const MENU = [
   {
+    key: 'twitter',
+    path: '/',
+    icon: <Icon.Twitter style={{ fontSize: 30 }} />,
+    iconSelected: (
+      <Icon.Twitter style={{ fontSize: 30, color: 'var(--c-text-color)' }} />
+    ),
+    title: '',
+    notify: 0
+  },
+  {
     key: 'home',
-    icon: <Home />,
-    iconSelected: <HomeFill />,
+    path: '/',
+    icon: <Icon.Home />,
+    iconSelected: <Icon.HomeFill />,
     title: 'Home',
-    notify: 0,
-    href: '/'
+    notify: 0
   },
   {
     key: 'explore',
-    icon: <Explore />,
-    iconSelected: <ExplorerFill />,
+    path: '/explore',
+    icon: <Icon.Explore />,
+    iconSelected: <Icon.ExplorerFill />,
     title: 'Explore',
-    notify: 0,
-    href: '/explore'
+    notify: 0
   },
   {
     key: 'notification',
-    icon: <Notification />,
-    iconSelected: <NotificationFill />,
+    path: '/notifications',
+    icon: <Icon.Notification />,
+    iconSelected: <Icon.NotificationFill />,
     title: 'Notifications',
-    notify: 17,
-    href: '/notifications'
+    notify: 17
   },
   {
     key: 'messages',
-    icon: <Messages />,
-    iconSelected: <MessagesFill />,
+    path: '/messages',
+    icon: <Icon.Messages />,
+    iconSelected: <Icon.MessagesFill />,
     title: 'Messages',
-    notify: 0,
-    href: '/messages'
+    notify: 0
   },
   {
     key: 'bookmark',
-    icon: <Bookmark />,
-    iconSelected: <BookmarkFill />,
+    path: '/bookmarks',
+    icon: <Icon.Bookmark />,
+    iconSelected: <Icon.BookmarkFill />,
     title: 'Bookmarks',
-    notify: 0,
-    href: '/bookmarks'
+    notify: 0
   },
   {
     key: 'lists',
-    icon: <Lists />,
-    iconSelected: <ListsFill />,
+    // to-do: username/lists olacak
+    path: '/berkaycoban35/lists',
+    icon: <Icon.Lists />,
+    iconSelected: <Icon.ListsFill />,
     title: 'Lists',
-    notify: 0,
-    href: '/berkaycoban35/lists'
+    notify: 0
   },
   {
     key: 'profile',
-    icon: <Profile />,
-    iconSelected: <ProfileFill />,
-    title: 'Profile',
-    notify: 0,
     // to-do: username gelecek
-    href: '/berkaycoban35'
+    path: '/berkaycoban35',
+    icon: <Icon.Profile />,
+    iconSelected: <Icon.ProfileFill />,
+    title: 'Profile',
+    notify: 0
   },
   {
     key: 'more',
-    icon: <More />,
-    iconSelected: <More />,
+    path: '',
+    icon: <Icon.More />,
+    iconSelected: <Icon.More />,
     title: 'More',
-    notify: 0,
-    href: ''
+    notify: 0
   }
 ]
 
