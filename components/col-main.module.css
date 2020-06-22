@@ -2,12 +2,4 @@
   border-width: 0 1px;
   border-style: solid;
   border-color: var(--c-border-color);
-
-  /* 
-    twitter bu sekilde ama
-    mobilde menuyu alta almak gerekiyo
-    min-width: 385px;
-  */
-
-  max-width: 600px;
 }

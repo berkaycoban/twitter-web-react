@@ -1,13 +1,13 @@
 .extra {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
 
   @media (--t) {
-    min-width: 280px;
+    padding-left: 20px;
   }
 
-  @media (--d) {
-    min-width: 350px;
+  @media (--t) {
+    padding-left: 30px;
   }
 }
 

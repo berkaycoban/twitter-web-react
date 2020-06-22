@@ -20,7 +20,7 @@
 
   @media (--d) {
     align-items: flex-start;
-    padding-right: 46px;
+    padding-right: 30px;
   }
 }
 
