@@ -2,7 +2,7 @@ import React from 'react'
 
 import TweetImage from '../components/main/tweet-image'
 import TweetEditor from '../components/main/tweet-editor'
-import TweetTextarea from '../components/forms/tweet-textarea'
+import TweetTextarea from '../components/main/tweet-textarea'
 import TweetEditorButtons from '../components/main/tweet-editor-buttons'
 import PageTitle from '../components/main/page-title'
 import TweetContainer from '../components/main/tweet-container'

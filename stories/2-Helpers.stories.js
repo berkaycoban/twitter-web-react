@@ -7,6 +7,7 @@ import SearchInput from '../components/forms/search'
 import NavigationButton from '../components/buttons/navigation-button'
 import Title from '../components/helpers/title'
 import ProfilePhoto from '../components/helpers/profile-photo'
+import Textarea from '../components/forms/textarea'
 
 export default {
   title: 'Helpers'
@@ -52,6 +53,7 @@ export const FormElements = () => (
     <Stack>
       <Input />
       <SearchInput />
+      <Textarea />
     </Stack>
   </>
 )

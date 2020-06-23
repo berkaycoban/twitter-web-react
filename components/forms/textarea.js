@@ -4,7 +4,12 @@ import cn from 'classnames'
 import styles from './textarea.module.css'
 
 // To-do: Textarea Auto Height
-function Textarea({ className, children, size = 150, ...props }) {
+function Textarea({
+  className,
+  children = "What's happening?",
+  size = 150,
+  ...props
+}) {
   return (
     <textarea
       className={cn([styles.textarea, className])}

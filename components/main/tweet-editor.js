@@ -5,7 +5,7 @@ import styles from './tweet-editor.module.css'
 
 import ProfilePhoto from '../helpers/profile-photo'
 import ThemeButton from '../buttons/theme-button'
-import TweetTextarea from '../forms/tweet-textarea'
+import TweetTextarea from './tweet-textarea'
 import TweetEditorButtons from './tweet-editor-buttons'
 
 function TweetEditor() {
