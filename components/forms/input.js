@@ -8,6 +8,7 @@ function Input({
   name,
   placeholder = 'Twitter',
   children,
+  className,
   ...props
 }) {
   return (
@@ -17,7 +18,7 @@ function Input({
         type={type}
         name={name}
         placeholder={placeholder}
-        className={cn([styles.input])}
+        className={cn([styles.input, className])}
         autoComplete="off"
         {...props}
       />

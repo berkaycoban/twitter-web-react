@@ -9,26 +9,25 @@ import { TimelineProp } from '../components/icons'
 
 function HomePage() {
   return (
-    <>
-      <Layout pageTitle="Home" titleIcon={<TimelineProp />}>
-        <TweetEditor />
-        {staticTweets.map((t) => {
-          return (
-            <TweetContainer
-              photo={t.photo}
-              name={t.name}
-              slug={t.slug}
-              time={t.time}
-              tweet={t.tweet}
-              image={t.image}
-              reply={t.reply}
-              retweet={t.retweet}
-              like={t.like}
-            />
-          )
-        })}
-      </Layout>
-    </>
+    <Layout pageTitle="Home" titleIcon={<TimelineProp />}>
+      <TweetEditor />
+      {staticTweets.map((t) => {
+        return (
+          <TweetContainer
+            photo={t.photo}
+            name={t.name}
+            slug={t.slug}
+            time={t.time}
+            tweet={t.tweet}
+            image={t.image}
+            reply={t.reply}
+            retweet={t.retweet}
+            like={t.like}
+            key={t.slug}
+          />
+        )
+      })}
+    </Layout>
   )
 }
 

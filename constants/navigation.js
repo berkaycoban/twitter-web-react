@@ -55,7 +55,7 @@ export const MENU = [
   {
     key: 'lists',
     // to-do: username/lists olacak
-    path: '/berkaycoban35/lists',
+    path: 'lists',
     icon: <Icon.Lists />,
     iconSelected: <Icon.ListsFill />,
     title: 'Lists',
@@ -64,7 +64,7 @@ export const MENU = [
   {
     key: 'profile',
     // to-do: username gelecek
-    path: '/berkaycoban35',
+    path: '/profile',
     icon: <Icon.Profile />,
     iconSelected: <Icon.ProfileFill />,
     title: 'Profile',
@@ -72,7 +72,7 @@ export const MENU = [
   },
   {
     key: 'more',
-    path: '',
+    path: '/more',
     icon: <Icon.More />,
     iconSelected: <Icon.More />,
     title: 'More',
