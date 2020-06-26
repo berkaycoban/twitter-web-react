@@ -8,12 +8,12 @@ import NavigationButton from './buttons/navigation-button'
 
 function Main({ pageTitle, titleIcon, children }) {
   return (
-    <div className={cn(styles.main)}>
+    <main className={cn(styles.main)}>
       <PageTitle title={pageTitle}>
         {titleIcon && <NavigationButton>{titleIcon}</NavigationButton>}
       </PageTitle>
       {children}
-    </div>
+    </main>
   )
 }
 

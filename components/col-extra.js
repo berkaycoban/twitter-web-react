@@ -6,10 +6,10 @@ import styles from './col-extra.module.css'
 import Search from './forms/search'
 import Trending from './extra/trending'
 import Follow from './extra/follow'
-import Button from './buttons/button'
 import TextSmall from './typography/text-small'
-import { ArrowBottom } from './icons'
+import Info from './extra/info'
 
+// To-do: Warning: Expected server HTML to contain a matching <div> in <div>
 function Extra() {
   return (
     <div className={cn(styles.extra)}>
@@ -22,25 +22,7 @@ function Extra() {
       <div className={styles.follow}>
         <Follow />
       </div>
-      <div className={styles.info}>
-        <Button>
-          <TextSmall extraSmall>Terms</TextSmall>
-        </Button>
-        <Button>
-          <TextSmall extraSmall>Privacy policy</TextSmall>
-        </Button>
-        <Button>
-          <TextSmall extraSmall>Cookies</TextSmall>
-        </Button>
-        <Button>
-          <TextSmall extraSmall>Ads info</TextSmall>
-        </Button>
-        <Button>
-          <TextSmall extraSmall>
-            More <ArrowBottom />
-          </TextSmall>
-        </Button>
-      </div>
+      <Info />
       <div className={styles.copyright}>
         <TextSmall extraSmall>&copy; 2020 Twitter, Inc.</TextSmall>
       </div>

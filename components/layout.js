@@ -12,6 +12,7 @@ import Extra from './col-extra'
 
 function Layout({ pageTitle, titleIcon, children }) {
   const size = useWindowSize()
+  const showExtra = size.width > mediaSize.TABLET_SIZE
 
   return (
     <div className={cn(styles.layout)}>
@@ -24,7 +25,7 @@ function Layout({ pageTitle, titleIcon, children }) {
         {children}
       </Main>
 
-      {size.width > mediaSize.TABLET_SIZE && <Extra>extra</Extra>}
+      {showExtra && <Extra> asdasdasd </Extra>}
     </div>
   )
 }
