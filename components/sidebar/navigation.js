@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-import MENU from '../../constants/navigation'
+import { MENU } from '../../constants/navigation'
 import styles from './navigation.module.css'
 
 import NavigationButton from '../buttons/navigation-button'
@@ -12,20 +12,21 @@ function Navigation({ flat }) {
   return (
     <>
       <nav className={styles.nav}>
-        {MENU.map((menu) => {
-          const showTitle = !flat && menu.title.length > 0
-          const selected = router.asPath === menu.path
+        {Object.keys(MENU).map((key) => {
+          const item = MENU[key]
+          const showTitle = !flat && item.title.length > 0
+          const selected = router.asPath === item.path
 
           return (
             <NavigationButton
-              key={menu.key}
-              notify={menu.notify}
+              key={`navigation-${key}`}
+              notify={item.notify}
               selected={selected}
-              href={menu.path}
+              href={item.path}
               className={styles.navButton}
             >
-              {selected ? menu.iconSelected : menu.icon}
-              {showTitle && <TextTitle>{menu.title}</TextTitle>}
+              {selected ? item.iconSelected : item.icon}
+              {showTitle && <TextTitle>{item.title}</TextTitle>}
             </NavigationButton>
           )
         })}

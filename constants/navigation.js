@@ -1,9 +1,8 @@
 import React from 'react'
 import * as Icon from '../components/icons'
 
-export const MENU = [
-  {
-    key: 'twitter',
+export const MENU = {
+  twitter: {
     path: '/',
     icon: <Icon.Twitter style={{ fontSize: 30 }} />,
     iconSelected: (
@@ -12,72 +11,62 @@ export const MENU = [
     title: '',
     notify: 0
   },
-  {
-    key: 'home',
+  home: {
     path: '/',
     icon: <Icon.Home />,
     iconSelected: <Icon.HomeFill />,
     title: 'Home',
     notify: 0
   },
-  {
-    key: 'explore',
+  explore: {
     path: '/explore',
     icon: <Icon.Explore />,
     iconSelected: <Icon.ExplorerFill />,
     title: 'Explore',
     notify: 0
   },
-  {
-    key: 'notification',
+  notification: {
     path: '/notifications',
     icon: <Icon.Notification />,
     iconSelected: <Icon.NotificationFill />,
     title: 'Notifications',
     notify: 17
   },
-  {
-    key: 'messages',
+  messages: {
     path: '/messages',
     icon: <Icon.Messages />,
     iconSelected: <Icon.MessagesFill />,
     title: 'Messages',
     notify: 0
   },
-  {
-    key: 'bookmark',
+  bookmark: {
     path: '/bookmarks',
     icon: <Icon.Bookmark />,
     iconSelected: <Icon.BookmarkFill />,
     title: 'Bookmarks',
     notify: 0
   },
-  {
-    key: 'lists',
-    // to-do: username/lists olacak
+  lists: {
+    // TODO: username/lists olacak
     path: 'lists',
     icon: <Icon.Lists />,
     iconSelected: <Icon.ListsFill />,
     title: 'Lists',
     notify: 0
   },
-  {
-    key: 'profile',
-    // to-do: username gelecek
+  profile: {
+    // TODO: username gelecek
     path: '/profile',
     icon: <Icon.Profile />,
     iconSelected: <Icon.ProfileFill />,
     title: 'Profile',
     notify: 0
   },
-  {
-    key: 'more',
+  more: {
     path: '/more',
     icon: <Icon.More />,
     iconSelected: <Icon.More />,
     title: 'More',
     notify: 0
   }
-]
-
-export default MENU
+}
