@@ -13,7 +13,7 @@ export const staticTweets = [
   },
   {
     photo:
-      'https://pbs.twimg.com/profile_images/988162982835179520/YWs_IwJ3_400x400.jpg',
+      'https://pbs.twimg.com/profile_images/1279498186785087488/NNd8rBcG_400x400.jpg',
     name: 'Rocket Lab',
     slug: 'RocketLab',
     datetime: new Date(2020, 8, 3),

@@ -19,13 +19,13 @@ function Extra() {
       <div className={styles.trending}>
         <Trending />
       </div>
-      {/* <div className={styles.follow}>
+      <div className={styles.follow}>
         <Follow />
       </div>
       <Info />
       <div className={styles.copyright}>
         <TextSmall extraSmall>&copy; 2020 Twitter, Inc.</TextSmall>
-      </div> */}
+      </div>
     </div>
   )
 }

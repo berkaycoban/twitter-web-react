@@ -1,6 +1,9 @@
 .layout {
   display: grid;
+
+  grid-template-areas: 'sidebar main extra';
   grid-template-columns: auto minmax(325px, 600px) auto;
+
   min-height: 100vh;
   max-width: 670px;
   margin-left: auto;
