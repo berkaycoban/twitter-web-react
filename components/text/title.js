@@ -1,9 +1,9 @@
 import React from 'react'
 import cn from 'classnames'
 
-import styles from './text-title.module.css'
+import styles from './title.module.css'
 
-function TextTitle({ bold = true, extra, children }) {
+function Title({ bold = true, extra, children }) {
   return (
     <h2
       className={cn([
@@ -17,4 +17,4 @@ function TextTitle({ bold = true, extra, children }) {
   )
 }
 
-export default TextTitle
+export default Title

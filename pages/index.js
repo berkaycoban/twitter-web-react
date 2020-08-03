@@ -4,7 +4,7 @@ import staticTweets from '../constants/static-tweets'
 
 import Layout from '../components/layout'
 import TweetEditor from '../components/main/tweet-editor'
-import TweetContainer from '../components/main/tweet-container'
+import Tweet from '../components/tweet'
 import { TimelineProp } from '../components/icons'
 
 function HomePage() {
@@ -13,16 +13,16 @@ function HomePage() {
       <TweetEditor />
       {staticTweets.map((t) => {
         return (
-          <TweetContainer
+          <Tweet
             photo={t.photo}
             name={t.name}
             slug={t.slug}
-            time={t.time}
-            tweet={t.tweet}
+            datetime={t.datetime}
+            text={t.tweet}
             image={t.image}
-            reply={t.reply}
-            retweet={t.retweet}
-            like={t.like}
+            reply_count={t.reply}
+            retweet_count={t.retweet}
+            like_count={t.like}
             key={t.slug}
           />
         )

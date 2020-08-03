@@ -1,9 +1,9 @@
 import React from 'react'
 import cn from 'classnames'
 
-import styles from './profile-photo.module.css'
+import styles from './style.module.css'
 
-function ProfilePhoto({
+function Photo({
   src = 'https://pbs.twimg.com/profile_images/1270075367949205507/WlwJibzU_400x400.jpg',
   alt = '',
   size = 47
@@ -15,4 +15,4 @@ function ProfilePhoto({
   )
 }
 
-export default ProfilePhoto
+export default Photo

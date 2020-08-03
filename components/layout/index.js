@@ -1,14 +1,14 @@
 import React from 'react'
 import cn from 'classnames'
 
-import mediaSize from '../constants/custom-media-size'
-import useWindowSize from '../hooks/useWindowSize'
+import styles from './style.module.css'
 
-import styles from './layout.module.css'
+import Sidebar from '../col/sidebar'
+import Main from '../col/main'
+import Extra from '../col/extra'
 
-import Sidebar from './col-sidebar'
-import Main from './col-main'
-import Extra from './col-extra'
+import mediaSize from '../../constants/custom-media-size'
+import useWindowSize from '../../hooks/useWindowSize'
 
 function Layout({ pageTitle, titleIcon, children }) {
   const size = useWindowSize()

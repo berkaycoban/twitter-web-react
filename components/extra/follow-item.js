@@ -3,13 +3,15 @@ import React from 'react'
 import styles from './follow-item.module.css'
 
 import ListItem from '../helpers/list-item'
-import ProfilePhoto from '../helpers/profile-photo'
-import TextBody from '../typography/text-body'
-import TextSmall from '../typography/text-small'
-import NavigationButton from '../buttons/navigation-button'
-import Button from '../buttons/button'
+import ProfilePhoto from '../photo'
+import TextBody from '../text/body'
+import TextSmall from '../text/small'
+import NavigationButton from '../navigation/button'
+import Button from '../button'
 
-// To-do: Uzun metin geldiginde ... sinirlamasini ayarla.
+// TODO: Uzun metin geldiginde ... sinirlamasini ayarla.
+// !: NavigationButton kaldir yerine IconButton olustur.
+
 function FollowItem({
   photo = 'https://pbs.twimg.com/profile_images/1270075367949205507/WlwJibzU_400x400.jpg',
   name = 'Berkay C.',

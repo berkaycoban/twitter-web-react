@@ -3,10 +3,10 @@ import cn from 'classnames'
 
 import styles from './list-item.module.css'
 
-// To-do: Hover olunca bg-color kimsini duzlet
-function ListItem({ children, className, border = true }) {
+// TODO: Hover olunca bg-color kimsini duzlet
+function ListItem({ children, className, border = true, key }) {
   return (
-    <div className={cn([styles.listItem, border && styles.border])}>
+    <div className={cn([styles.listItem, border && styles.border])} key={key}>
       <div className={styles.listItemHover}></div>
       <div className={cn(className)}>{children}</div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 
-import TextTitle from '../typography/text-title'
+import TextTitle from '../text/title'
 import styles from './title.module.css'
 
 function Title({ title = 'Home', children, className }) {

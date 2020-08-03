@@ -1,12 +1,12 @@
 import React from 'react'
 import cn from 'classnames'
 
-import styles from './profile-box.module.css'
+import styles from './style.module.css'
 
-import ProfilePhoto from '../helpers/profile-photo'
+import ProfilePhoto from '../photo'
 import { ArrowBottom } from '../icons'
-import Button from '../buttons/button'
-import TextBody from '../typography/text-body'
+import Button from '../button'
+import TextBody from '../text/body'
 
 function ProfileBox({
   flat = false,

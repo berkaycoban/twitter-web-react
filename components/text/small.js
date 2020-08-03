@@ -1,9 +1,9 @@
 import React from 'react'
 import cn from 'classnames'
 
-import styles from './text-small.module.css'
+import styles from './small.module.css'
 
-function TextSmall({ extraSmall, className, children, ...props }) {
+function Small({ extraSmall, className, children, ...props }) {
   return (
     <span
       className={cn([styles.small, extraSmall && styles.extraSmall, className])}
@@ -13,4 +13,4 @@ function TextSmall({ extraSmall, className, children, ...props }) {
     </span>
   )
 }
-export default TextSmall
+export default Small

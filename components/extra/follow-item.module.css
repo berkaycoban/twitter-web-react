@@ -6,6 +6,7 @@
 .body {
   margin-left: 10px;
   padding-right: 15px;
+  color: var(--c-gray);
 }
 
 .nameButton:hover {

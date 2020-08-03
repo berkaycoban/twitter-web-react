@@ -18,3 +18,8 @@
 .fullWidth {
   width: 100% !important;
 }
+
+.iconButton {
+  color: inherit;
+  padding: 8px;
+}

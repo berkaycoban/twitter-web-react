@@ -1,11 +1,12 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-import { MENU } from '../../constants/navigation'
 import styles from './navigation.module.css'
 
-import NavigationButton from '../buttons/navigation-button'
-import TextTitle from '../typography/text-title'
+import { MENU } from '../../constants/navigation'
+
+import NavigationButton from './button'
+import TextTitle from '../text/title'
 
 function Navigation({ flat }) {
   const router = useRouter()

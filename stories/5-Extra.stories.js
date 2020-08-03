@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Stack from '../components/helpers/stack'
+import Stack from '../components/stack'
 import ListItem from '../components/helpers/list-item'
 import TrendingItem from '../components/extra/trending-item'
 import WidgetHeader from '../components/extra/widget-header'

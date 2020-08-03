@@ -1,9 +1,10 @@
 import React from 'react'
 
-import Stack from '../components/helpers/stack'
-import TextTitle from '../components/typography/text-title'
-import TextBody from '../components/typography/text-body'
-import TextSmall from '../components/typography/text-small'
+import Stack from '../components/stack'
+import TextTitle from '../text/title'
+import TextBody from '../text/body'
+import TextSmall from '../text/small'
+
 export default {
   title: 'Typography'
 }

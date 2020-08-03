@@ -3,14 +3,15 @@ import cn from 'classnames'
 
 import styles from './tweet-container.module.css'
 
-import ProfilePhoto from '../helpers/profile-photo'
-import TextBody from '../typography/text-body'
-import NavigationButton from '../buttons/navigation-button'
+import ProfilePhoto from '../photo'
+import TextBody from '../text/body'
+import NavigationButton from '../navigation/button'
 import TweetImage from './tweet-image'
 import TweetButtons from './tweet-buttons'
-import TextSmall from '../typography/text-small'
+import TextSmall from '../text/small'
 
 import { ArrowBottom } from '../icons'
+// !: NavigationButton kaldir yerine IconButton olustur.
 
 function TweetContainer({
   photo = 'https://pbs.twimg.com/profile_images/1270075367949205507/WlwJibzU_400x400.jpg',

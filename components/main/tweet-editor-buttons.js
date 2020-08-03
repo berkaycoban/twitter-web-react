@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './tweet-editor-buttons.module.css'
 
-import Button from '../buttons/button'
+import Button from '../button'
 import { Media, Gif, Question, Emoji, Schedule } from '../icons'
 import mediaSize from '../../constants/custom-media-size'
 

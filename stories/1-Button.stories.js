@@ -3,11 +3,11 @@ import { withKnobs, boolean } from '@storybook/addon-knobs'
 
 import tweetButtonColor from '../constants/tweet-button-color'
 
-import Button from '../components/buttons/button'
-import ThemeButton from '../components/buttons/theme-button'
+import Button from '../components/button'
+import ThemeButton from '../components/theme-button'
 import NavigationButton from '../components/buttons/navigation-button'
-import TextTitle from '../components/typography/text-title'
-import Stack from '../components/helpers/stack'
+import TextTitle from '../text/title'
+import Stack from '../components/stack'
 import TweetButton from '../components/buttons/tweet-button'
 import { Home, Tweet, Reply, Retweet } from '../components/icons'
 

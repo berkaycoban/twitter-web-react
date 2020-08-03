@@ -1,7 +1,7 @@
 import React from 'react'
 import { withKnobs, boolean } from '@storybook/addon-knobs'
 
-import ProfileBox from '../components/sidebar/profile-box'
+import ProfileBox from '../components/profile-box'
 import Navigation from '../components/sidebar/navigation'
 
 export default {

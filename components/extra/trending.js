@@ -4,12 +4,14 @@ import cn from 'classnames'
 import styles from './trending.module.css'
 
 import WidgetHeader from './widget-header'
-import NavigationButton from '../buttons/navigation-button'
+import NavigationButton from '../navigation/button'
 import { Options } from '../icons'
 import TrendingItem from './trending-item'
 import WidgetFooter from './widget-footer'
 
 import trendingItems from '../../constants/trending'
+
+// !: NavigationButton kaldir yerine IconButton olustur.
 
 function Trending({ className }) {
   return (
@@ -29,7 +31,7 @@ function Trending({ className }) {
           />
         ))}
 
-        <WidgetFooter key="footer" />
+        <WidgetFooter key="trending-footer" />
       </div>
     </>
   )

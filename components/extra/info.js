@@ -2,8 +2,8 @@ import React from 'react'
 
 import styles from './info.module.css'
 
-import Button from '../buttons/button'
-import TextSmall from '../typography/text-small'
+import Button from '../button'
+import TextSmall from '../text/small'
 import { ArrowBottom } from '../icons'
 
 function Info() {

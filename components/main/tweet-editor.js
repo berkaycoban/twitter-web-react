@@ -3,8 +3,8 @@ import cn from 'classnames'
 
 import styles from './tweet-editor.module.css'
 
-import ProfilePhoto from '../helpers/profile-photo'
-import ThemeButton from '../buttons/theme-button'
+import ProfilePhoto from '../photo'
+import ThemeButton from '../theme-button'
 import TweetTextarea from './tweet-textarea'
 import TweetEditorButtons from './tweet-editor-buttons'
 

@@ -1,12 +1,12 @@
 import React from 'react'
 
 import * as Icons from '../components/icons'
-import Stack from '../components/helpers/stack'
+import Stack from '../components/stack'
 import Input from '../components/forms/input'
 import SearchInput from '../components/forms/search'
 import NavigationButton from '../components/buttons/navigation-button'
 import Title from '../components/helpers/title'
-import ProfilePhoto from '../components/helpers/profile-photo'
+import ProfilePhoto from '../components/photo'
 import Textarea from '../components/forms/textarea'
 
 export default {

@@ -1,7 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 
-import styles from './tweet-image.module.css'
+import styles from './style.module.css'
 
 function TweetImage({
   src = 'https://pbs.twimg.com/media/EaAPZ9kXQAAcs6n?format=png&name=small',
