@@ -9,7 +9,7 @@
 
   position: -webkit-sticky;
   position: sticky;
-  overflow: auto;
+  overflow: hidden;
   top: 0;
 
   padding-left: 10px;
