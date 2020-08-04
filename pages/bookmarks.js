@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 function BookmarksPage() {
   return (
     // to-do: icon
-    <Layout pageTitle="Bookmarks" titleIcon="">
+    <Layout pageTitle="Bookmarks" icon="">
       Bookmarks Page
     </Layout>
   )

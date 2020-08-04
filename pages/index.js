@@ -9,7 +9,7 @@ import { TimelineProp } from '../components/icons'
 
 function HomePage() {
   return (
-    <Layout pageTitle="Home" titleIcon={<TimelineProp />}>
+    <Layout pageTitle="Home" icon={<TimelineProp />}>
       <TweetEditor />
       {staticTweets.map((t) => {
         return (

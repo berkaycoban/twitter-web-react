@@ -1,14 +1,11 @@
 import React from 'react'
 import { withKnobs, boolean } from '@storybook/addon-knobs'
 
-import tweetButtonColor from '../constants/tweet-button-color'
-
 import Button from '../components/button'
 import ThemeButton from '../components/theme-button'
-import NavigationButton from '../components/buttons/navigation-button'
-import TextTitle from '../text/title'
+import NavigationButton from '../components/navigation/button'
+import TextTitle from '../components/text/title'
 import Stack from '../components/stack'
-import TweetButton from '../components/buttons/tweet-button'
 import { Home, Tweet, Reply, Retweet } from '../components/icons'
 
 export default {
@@ -34,22 +31,6 @@ export const Theme = () => {
       <ThemeButton big flat={flat}>
         <Tweet />
       </ThemeButton>
-    </Stack>
-  )
-}
-
-export const TweetBtn = () => {
-  return (
-    <Stack>
-      <TweetButton count={35}>
-        <Reply />
-      </TweetButton>
-      <TweetButton
-        color={tweetButtonColor.RETWEET}
-        colorBg={tweetButtonColor.RETWEETBG}
-      >
-        <Retweet />
-      </TweetButton>
     </Stack>
   )
 }

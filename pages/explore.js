@@ -5,7 +5,7 @@ import { Options } from '../components/icons'
 
 function ExplorePage() {
   return (
-    <Layout pageTitle="search bar" titleIcon={<Options />}>
+    <Layout pageTitle="search bar" icon={<Options />}>
       ExplorePage
     </Layout>
   )

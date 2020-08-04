@@ -6,7 +6,7 @@ import { Options } from '../components/icons'
 
 function NotificationsPage() {
   return (
-    <Layout pageTitle="Notifications" titleIcon={<Options />}>
+    <Layout pageTitle="Notifications" icon={<Options />}>
       Notifications Page
     </Layout>
   )

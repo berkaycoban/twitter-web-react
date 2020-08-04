@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 function MessagesPage() {
   return (
     // to-do: yeni ikon eklenecek
-    <Layout pageTitle="Messages" titleIcon="">
+    <Layout pageTitle="Messages" icon="">
       Messages Page
     </Layout>
   )

@@ -10,7 +10,7 @@ import Extra from '../col/extra'
 import mediaSize from '../../constants/custom-media-size'
 import useWindowSize from '../../hooks/useWindowSize'
 
-function Layout({ pageTitle, titleIcon, children }) {
+function Layout({ pageTitle, icon, children }) {
   const size = useWindowSize()
   const showExtra = size.width > mediaSize.TABLET_SIZE
 
@@ -21,7 +21,7 @@ function Layout({ pageTitle, titleIcon, children }) {
         search={size.width < mediaSize.TABLET_SIZE}
       ></Sidebar>
 
-      <Main pageTitle={pageTitle} titleIcon={titleIcon}>
+      <Main pageTitle={pageTitle} icon={icon}>
         {children}
       </Main>
 

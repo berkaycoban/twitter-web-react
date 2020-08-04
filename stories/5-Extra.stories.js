@@ -4,7 +4,7 @@ import Stack from '../components/stack'
 import ListItem from '../components/helpers/list-item'
 import TrendingItem from '../components/extra/trending-item'
 import WidgetHeader from '../components/extra/widget-header'
-import NavigationButton from '../components/buttons/navigation-button'
+import NavigationButton from '../components/navigation/button'
 import Trending from '../components/extra/trending'
 import FollowItem from '../components/extra/follow-item'
 import Follow from '../components/extra/follow'
@@ -55,12 +55,7 @@ export const TrendingModule = () => (
 export const FollowItems = () => (
   <>
     <Stack column>
-      <FollowItem></FollowItem>
-      <FollowItem
-        photo="https://pbs.twimg.com/profile_images/988162982835179520/YWs_IwJ3_400x400.jpg"
-        name="Rocket Lab"
-        slug="RocketLab"
-      />
+      <FollowItem />
     </Stack>
   </>
 )
