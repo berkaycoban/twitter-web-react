@@ -3,16 +3,13 @@ import cn from 'classnames'
 
 import styles from './main.module.css'
 
-import PageTitle from '../main/page-title'
-import NavigationButton from '../navigation/button'
+import PageTitle from '../page-title'
+import IconButton from '../button/icon'
 
-// !: NavigationButton kaldir yerine IconButton olustur.
-function Main({ pageTitle, titleIcon, children }) {
+function Main({ pageTitle, icon, children }) {
   return (
     <main className={cn(styles.main)}>
-      <PageTitle title={pageTitle}>
-        {titleIcon && <NavigationButton>{titleIcon}</NavigationButton>}
-      </PageTitle>
+      <PageTitle title={pageTitle} icon={icon} />
       {children}
     </main>
   )
